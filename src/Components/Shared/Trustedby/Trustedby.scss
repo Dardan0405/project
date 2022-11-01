@@ -1,0 +1,55 @@
+Trusted-by-manycomapnies{
+    margin: 3.5%;
+    padding: 0 38%;
+    @media(max-width:1500px){
+        width: 100%;
+        
+    }
+  
+    
+    }
+    .Line-row{
+        width: 100%;
+        height: 16px;
+        position: relative;
+        
+    }
+.Line-row::after, .Line-row::before{ 
+    content: '';
+    position:absolute;
+    margin:auto;
+    height: 1px;
+    background: #EBA62A;
+    width: 17%;
+    top: 55%;
+}
+.Line-row::after{
+    left: -25%;
+
+}
+.Line-row::before{
+    right: -4%;
+}
+.Trusted-title{
+    font-size: 18px;
+    width: 80%;
+}
+.Logo-Trustedby{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.Logo-Trustedby .Logo-Container{
+    width:107%;
+    margin: max(49px,1vw )2%;
+    display: flex;
+    justify-content: center;
+    .Logo-comapnies{
+        height: 63px;
+        max-width: 114%;
+        padding: 1% 12% 1% 29%;
+
+    }
+}
+

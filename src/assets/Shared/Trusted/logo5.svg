@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="268.5" height="53" viewBox="0 0 268.5 53">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#019746"/>
+      <stop offset="1" stop-color="#014c23"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_10382" data-name="Group 10382" transform="translate(-82 -24.886)">
+    <text id="ImbaStudio" transform="translate(148.5 67.886)" fill="#231c1c" font-size="40" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">ImbaStudio</tspan></text>
+    <path id="Exclusion_1" data-name="Exclusion 1" d="M40.8,45h-44l5.556-9.293L6,41.8,22.444,14.295,40.8,45ZM2.357,35.706h0L-16,5H28l-5.556,9.293L18.8,8.2Z" transform="translate(98 29)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

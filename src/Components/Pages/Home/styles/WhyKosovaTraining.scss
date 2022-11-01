@@ -1,0 +1,90 @@
+Homepage .Logos-WhyKs{
+    position: absolute;
+    background-color: #fff;
+    width: 57%;
+    height: auto;
+    align-items: 0;
+}
+
+.Logos-WhyKs .Logo-Container-WhyKosovaTraining{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.Icon-Olimpic {
+    content: url('../../../../assets/Home/WhyKosovaTraining/Logo1.svg');
+    width: 8%;
+    margin-bottom: 3%;
+    margin-right: 44%;
+}
+.Icon-Half{
+    content: url('../../../../assets/Home/WhyKosovaTraining/Logo2.svg');
+    width: 8%;
+    margin-right: 41%;
+    margin-top: 25%;
+}
+.Icon-Art{
+    content: url('../../../../assets/Home/WhyKosovaTraining/Logo3.svg');
+    margin-right: 17%;
+    width: 8%;
+    margin-top: -23%;
+    margin-left: -9%;
+    margin-bottom: -4%;
+}
+.Icon-HalfCircle{
+    content: url('../../../../assets/Home/WhyKosovaTraining/Logo4.svg');
+width: 8%;
+margin-top: -13%;
+margin-left: 18%;
+margin-bottom: -1%;
+}
+.Icon-Book{
+    content: url('../../../../assets/Home/WhyKosovaTraining/Logo5.svg');
+    width: 8%;
+    margin-top: 18%;
+    margin-left: 15%;
+}
+.Icon-Brush{
+    content: url('../../../../assets/Home/WhyKosovaTraining/Logo6.svg');
+    width: 8%;
+    margin-top: -29%;
+    margin-left: 49%;
+}
+.Icon-2pieceIcon{
+    content: url('../../../../assets/Home/WhyKosovaTraining/Logo7.svg');
+    width: 8%;
+    margin-top: -19%;
+    margin-left: 74%;
+}
+.Icon-Calendar{
+    content: url('../../../../assets/Home/WhyKosovaTraining/Logo8.svg');
+    width: 8%;
+    margin-top: 17%;
+    margin-left: 76%;
+}
+.Info-WhyKS{
+    width: 100%;
+    position: relative;
+    height: auto;
+}
+.Info-contaier   {
+    display: flex;
+    flex-direction: column;
+    width: 49.5%;
+    line-height: 145%;
+    margin-top: -35%;
+    margin-left: 27%;
+    h1{
+        margin-left: -4%;
+        margin-top: -6%;
+        margin-bottom: 12%;
+    }
+    p{
+        margin-top: 2%;
+    }
+    
+}
+.About-Circle{
+    margin-top: 9%;
+}
