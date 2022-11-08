@@ -1,6 +1,6 @@
-Trusted-by-manycomapnies{
+.Trusted-by-manycomapnies{
     margin: 3.5%;
-    padding: 0 38%;
+    padding: 0 35%;
     @media(max-width:1500px){
         width: 100%;
         
@@ -41,15 +41,31 @@ Trusted-by-manycomapnies{
     justify-content: center;
 }
 .Logo-Trustedby .Logo-Container{
-    width:107%;
+    width:149%;
     margin: max(49px,1vw )2%;
     display: flex;
     justify-content: center;
     .Logo-comapnies{
-        height: 63px;
-        max-width: 114%;
-        padding: 1% 12% 1% 29%;
+        height: 82px;
+        max-width: 177%;
+        padding: 1% 22% 1% 17%;
 
     }
+    
+}
+.logo-row1{
+   width: 91%;
+}
+.logo-row2{
+    width: 69%;
+}
+.logo-row3{
+    width: 76%;
+}
+.logo-row4{
+   width: 81%;
 }
 
+.logo-row5{
+    width: 86%;
+}

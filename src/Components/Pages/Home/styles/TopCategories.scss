@@ -1,0 +1,77 @@
+.Cards-topcategoties{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    width: 25%;
+    border: 1px solid #475677;
+    height: 100%;
+    border-radius: 14px;
+    cursor: pointer;
+    position: relative;
+}
+.rec-pagination{
+    display: none;
+}
+.Cards-topcategoties .Icon-Container-Top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 8%;
+    .Icon-Top{
+        position: relative;
+        z-index: 3;
+    width: 30px;
+    max-height: 50px;
+    }
+    .border-top{
+        border-radius: 50%;
+        border-style: dotted;
+        height: 45px;
+        width: 45px;
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        border-width: 2px;
+    }
+}
+.Ttile-Top{
+    display: flex;
+    position: relative;
+    margin-top: 14%;
+    .Ttile-Container-Top{
+        color: black;
+        font-size: 20px;
+    }
+}
+.bllock-TopCategories{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6%;
+    text-align: center;
+    .Pargraph-Container-top{
+        font-size: 17px;
+    }
+}
+
+.Top-Categories{
+    position: relative;
+    
+   margin: 10%;
+    margin-left: 29%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 7.5%;
+    text-align: center;
+}
+
+.TopCategories-Title{
+    color: black;
+    font-size: 17px;
+}
