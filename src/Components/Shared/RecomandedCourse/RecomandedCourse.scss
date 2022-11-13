@@ -1,0 +1,152 @@
+.Recomaded-Coruse-Container{
+    margin: max(3%,24px)0;
+    padding: 0 max(9%,1vw);
+}
+.react-tabs__tab-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.react-tabs__tab{
+    padding: max(30px,1.5vw) max(17px,0.5vw);
+    margin: max(17px,0.5vw);
+}
+.react-tabs__tab--selected{
+    
+    color:#4B3C66;
+}
+.react-tabs__tab-panel{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.col{
+    width: 29%;
+    margin:  0% 0.9%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+}
+.inner-cotentRec{
+    border: 1px solid  #475677;
+    border-radius: 14px;
+    margin: 6% 4%;
+    flex: 1;
+    flex-direction: column;
+    overflow: hidden;
+    width: 93%;
+    
+
+
+}
+.Image-Rec{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    
+    .image-containerRec{
+        width: 100%;
+       
+    }
+
+}
+
+.Pargraph-monthsRec{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 0%;
+    
+    
+    p{
+        font-size: 15px;
+        margin-right: 34%;
+        color: #7d8597;
+    }
+}
+.Circle-Recomanded{
+    border: 1px  rgb(0,181,145,17%);
+    border-radius: 15px;
+    width: 33%;
+    height: 27px;
+    background-color: rgb(0, 181, 145, 17%);
+    p{
+        font-size: 15px;
+        padding: 4%;
+        margin-left: 18%;
+        width:100%;
+        color: rgb(0, 181, 145, 100%);
+
+    }
+}
+.Title-Recomanded{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3% 2%;
+    width:87.8%;
+    h4{
+        font-size: 17px;
+        color: #103b3e;
+    }
+}
+
+.StsrRev-Students{
+    display: flex;
+    flex-direction: row;
+    padding: 1% 2%;
+    p{
+         padding: 0% 3%;
+         font-size: 14px;
+         color:#707070;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+    }
+    .Students-REC{
+        margin-left: 21%;
+        font-size: 15px;
+        color: #7d8597;
+    }
+}
+.Enrollnow-Rec{
+    display: flex;
+    border: 1px solid #4b3c99;
+    width: 36%;
+    text-align: center;
+    height: 34px;
+    margin-bottom: 3%;
+    border-radius: 30px;
+    margin-left: 3%;
+    a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1% 21%;
+        color: #4b3c99;
+        font-size: 15px;
+    }
+}
+
+
+
+
+
+.Recomanded-Play{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: black;
+    width: 100%;
+    height: 100%;
+    display: none;
+    &:hover{
+        display: block;
+        background: rgba(75,60,153,69%);
+    }
+}
+

@@ -6,11 +6,11 @@ import './data'
 import { TopCategoriesdata } from "./data"
 import { Link } from "react-router-dom"
 const breakPoints =[
-    {width:1, itemToShow:1},
-    {width:500, itemToShow: 2},
-    {width:750, itemToShow: 3},
-    {width:900, itemToShow: 4},
-    {width:1000, itemToShow: 5},
+    {width:1, itemsToShow:1},
+    {width:150, itemsToShow: 2},
+    {width:250, itemsToShow: 3},
+    {width:350, itemsToShow: 4},
+    {width:450, itemsToShow: 5},
   
     
 ];
@@ -58,10 +58,17 @@ const TopCategories =() =>{
         
             
                 </div>
+                
+              
             
               )
             })}
               </Carousel>
+              <div className="Link-Top">
+        <Link to='/'  className="view-all-Top">
+                <FormattedMessage id="Vew" defaultMessage='View all'/>
+            </Link>
+            </div>
               
             
         </div>

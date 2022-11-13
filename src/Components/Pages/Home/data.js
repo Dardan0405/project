@@ -30,14 +30,14 @@ color:'#6C5CE7'
 {
    to: '/',
    icon:Photo,
-   title:<FormattedMessage id="pHO" defaultMessage="Photo"/>,
+   title:<FormattedMessage id="pHO" defaultMessage="Photography"/>,
    paragraph:<FormattedMessage id="203" defaultMessage="203 Courses"/>,
    color:'#34B4B3'
 },
 {
     to: '/',
     icon:Game,
-    title:<FormattedMessage id="Game" defaultMessage="Game"/>,
+    title:<FormattedMessage id="Game" defaultMessage="Gaming"/>,
     paragraph:<FormattedMessage id="173" defaultMessage="173 Courses"/>,
     color:'#E0474E'
 },
