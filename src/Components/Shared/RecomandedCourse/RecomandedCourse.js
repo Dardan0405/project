@@ -34,7 +34,7 @@ const  RecomandedCourse=() =>{
     return(
         <div className="Recomaded-Coruse-Container">
             <h1><FormattedMessage id="Recomanded" defaultMessage= "Recomanded"/>
-            <span>Courses</span></h1>
+            <span> Courses</span></h1>
            
           
                 
@@ -100,7 +100,10 @@ const  RecomandedCourse=() =>{
                                                     <div className="Enrollnow-Rec">
                                                         <Link>{a.link}</Link>
                                                     </div>
+                                                    
                                                     </div>
+                                                  
+                                                    
                                                 
                                             )
                                         })}
@@ -119,10 +122,13 @@ const  RecomandedCourse=() =>{
                     })}
                     </div>
 
-                    </Tabs>  
+                    </Tabs>
+                    <div className="Link-RecomandedL">
+                    <Link>Load More</Link>
+                     </div>
                     </div>
                                 
-       // </div>
+       
         
         
     )
