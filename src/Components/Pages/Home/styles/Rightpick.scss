@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,300&display=swap');
+
+.RightPick{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+
+
+
+.RightPick-ImageContainer{
+    background:linear-gradient(156deg, rgba(0, 0, 0, 20%),   rgba(112,112, 112,100%)),  
+    url('../../../../assets/Home/RightPIck/Image.jpg');
+    display: flex;
+    width: 31%;
+    border-radius: 30px;
+    margin: max(3px,0%)15%;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+    background-size: cover;
+    background-position: center;
+    padding: max(182px,14%)16%;
+    .icon-RightPick{
+        height: 53px;
+        width: 61px;
+    }
+}
+.Right-PickDescription{
+    display: flex;
+    flex-direction: column;
+    margin-left: -44%;
+    margin-top: -21%;
+    width: 103%;
+    h4{
+        font-size: 38px;
+        width: 80%;
+        margin: 5% 0%;
+        font-family: 'Poppins', sans-serif;
+    }
+    p{
+        width: 77.5%;
+        font-size: 18px;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 3%;
+    }
+}
+.Content-PickD{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6%;
+}
+.Links-RightPick{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5%;
+    margin-left: -120%;
+    margin-bottom: 9%;
+    font-family: 'Poppins', sans-serif;
+}
+.Take-aquiz-Rightpick{
+    border-radius: 30px;
+    font-size: 16px;
+    display: flex;
+    width: 95%;
+    justify-content: center;
+    height: 42px;
+    background: #6e53ff;
+    align-items: center;
+    color: #ffff;
+}
+.Learn-more-RightPick{
+    margin-right: -118%;
+    border: 1px solid #5b47c9;
+    color: #5b47c9;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 42px;
+    font-size: 16px;
+    width: 95%;
+}
+.Icon-redblueorangeRightPick{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 64%;
+    width: 85%;
+
+}
+.Price-RedPick{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo-PricePick{
+    display: flex;
+    position: relative;
+    align-items: center;
+    .Circle-PricePick{
+        border: 1px transparent;
+        border-radius: 50%;
+        height: 47px;
+        width: 47px;
+       
+        .Logo-ContainerPrice{
+            height: 25px;
+           
+            margin-top: 25%;
+        }
+    }
+   
+}
+.Content-Price{
+    margin-top: 15%;
+    font-family: 'Poppins', sans-serif;
+}
+.Calendar-Blue{
+    background-color: rgba(47,60,237,16%);
+}
+.Price-Red{
+    width: 45px;
+}
+.Logo-Cal{
+ width: 48px;   
+} 
+.CirclePrice{
+    background-color: rgba(235,52,52,18%);
+}
+.Medal-OrangP
+{
+    background: rgba(228,167,88,38%);
+}
+.Logo-Medal{
+    width: 45px;
+}

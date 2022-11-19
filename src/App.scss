@@ -38,6 +38,9 @@ body::-webkit-scrollbar-thumb {
   margin: 0;
   display: flex;
 }
+.rec-dot{
+  display: none !important;
+}
 .styled-arrows{
   .rec-arrow,
   .rec-arrow-left,

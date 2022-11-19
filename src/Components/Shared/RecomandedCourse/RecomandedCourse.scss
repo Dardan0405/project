@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,300&display=swap');
 .Recomaded-Coruse-Container{
     margin: max(3%,24px)0;
     padding: 0 max(9%,1vw);
@@ -7,13 +8,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
     
 }
 .react-tabs__tab{
     padding: max(30px,1.5vw) max(17px,0.5vw);
-    margin: max(17px,0.5vw);
-    font-size: 17px;
-    
+    margin: max(13px,0.5vw);
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+  
 
 }
 .react-tabs__tab--selected{
@@ -61,7 +64,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 5% 0%;
+    padding: 5% 2%;
     
     
     p{
@@ -89,20 +92,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 3% 2%;
-    width:87.8%;
+    padding: 3% 3%;
+    width:101.3%;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1%;
+
     h4{
         font-size: 17px;
         color: #103b3e;
+        
     }
 }
 
 .StsrRev-Students{
     display: flex;
     flex-direction: row;
-    padding: 1% 2%;
+    padding: 2% 3%;
+    margin-bottom: 3%;
     p{
-         padding: 0% 3%;
+         padding: 0% 2%;
          font-size: 14px;
          color:#707070;
          display: flex;
@@ -118,12 +126,13 @@
 .Enrollnow-Rec{
     display: flex;
     border: 1px solid #4b3c99;
-    width: 36%;
+    width: 38%;
     text-align: center;
-    height: 34px;
+    height: 33px;
     margin-bottom: 3%;
     border-radius: 30px;
-    margin-left: 3%;
+    margin-left: 2%;
+    font-family: 'Poppins', sans-serif;
     a{
         display: flex;
         justify-content: center;

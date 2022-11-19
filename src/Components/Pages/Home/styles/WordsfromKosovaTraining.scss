@@ -1,0 +1,95 @@
+.WordsFromStudents{
+    margin: max(5%,32px)0;
+    padding: 2% 16%;
+    position:  relative;
+    h4{
+        font-size: 32px;
+        width: 33%;
+        margin-left: 38%;
+        text-align: center;
+    }
+}
+.Circle-PhotosStudents{
+    display: flex;
+    flex-direction: column;
+    .Circle-Student1Words{
+        width: 81px;
+        height: 80px;
+
+    }
+    .Circle-StudentWords1{
+        width: 81px;
+        height: 80px;
+    }
+    .Circle-StudentWords2{
+        width: 81px;
+        height: 80px;
+    }
+}
+.Cards-WordfromStudent{
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Icon-WordsFromStudnet{
+    width: 96px;
+    height: 80px;
+    margin-bottom: -5%;
+
+}
+.Iconwrod-From{
+    height: 96px;
+    width: 97px;
+}
+.Containter-CardsWordFromStudent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid rgba(112,112,112,7%);
+    z-index: 3;
+    width: 84%;
+    height: fit-content;
+}
+.Top-ContainerWordfromStudent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -10%;
+    
+
+}
+.Botom-ContainerWordFromStudent{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 71%;
+    margin-top: -47%;
+    text-align: center;
+}
+.Qoute-BottomWordFromStudent{
+    margin-top: -8%;
+    margin-left: -10%;
+}
+.Container-Bottom{
+    margin-left: 2%;
+    width: 100%;
+    margin-bottom: 5%;
+p{
+    font-size: 18px;
+    width:107.2%;
+
+}
+}
+
+.info-ForStudent{
+    margin-bottom: 4%;
+}
+.rec-arrow{
+    margin-top: 36%;
+     width: 50%;
+}

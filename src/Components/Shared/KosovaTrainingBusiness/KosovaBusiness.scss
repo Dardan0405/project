@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,300&display=swap');
+
+.Kosova-Buiness-Image{
+    background:  
+url('../../../assets/Shared/KosovaBusiness/Background.jpg');
+background-repeat:no-repeat;
+
+background-size: cover;
+background-position: center;
+background-attachment: inherit;
+position: relative;
+margin-top: 15%;
+display: flex;
+flex-direction: row-reverse;
+justify-content: space-around;
+align-items: center;
+
+}
+.Kosova-Business-Image2{
+    content: url('../../../assets/Shared/KosovaBusiness/Students.png');
+   
+    margin-top: -3%;
+    width: 38%;
+    margin-right: 18%;
+
+}
+.Kosova-BusinessContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8%;
+    margin-top: 0%;
+    color: #fff;
+}
+.Logo-KosovaBusiness{
+    width: 30%;
+    justify-content: center;
+    margin-right: 81%;
+    align-items: center;
+    display: flex;
+    margin-top: 6%;
+    margin-bottom: 8%;
+
+}
+.Text-Content{
+    display: flex;
+    flex-direction: column;
+    margin-left: -13%;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    h4{
+        font-size: 37px;
+        margin-bottom: 4%;
+    }
+    p{
+        font-size: 18px;
+        width: 83%;
+    }
+}
+.Link-KosovaBusiness{
+    margin-top: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    border-radius: 30px;
+    height: 40px;
+    border: 1px solid #fff;
+    font-family: 'Poppins', sans-serif;
+    a{
+        color: #fff;
+    }
+}

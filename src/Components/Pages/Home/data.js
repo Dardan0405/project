@@ -5,6 +5,10 @@ import Design from '../../../assets/Home/Top-Categories/Design.svg'
 import Dev from '../../../assets/Home/Top-Categories/Dev.svg'
 import Game from '../../../assets/Home/Top-Categories/Game.svg'
 import Photo from '../../../assets/Home/Top-Categories/Photo.svg'
+import iconCard1 from '../../../assets/Home/WordsfromStudents/iconCard1.png'
+import Quote1 from '../../../assets/Home/WordsfromStudents/Quote1.svg'
+import Quote2 from '../../../assets/Home/WordsfromStudents/Quote2.svg'
+import iconCard2 from '../../../assets/Home/WordsfromStudents/iconCard2.png'
 export const TopCategoriesdata =[
 {
 to: '/',
@@ -48,4 +52,29 @@ color:'#6C5CE7'
    paragraph:<FormattedMessage id="89" defaultMessage="89 Courses"/>,
    color:'#3EB135'
 },
+]
+
+export const dataCards =[
+    {
+        icon:iconCard1,
+        Quote:Quote1,
+        Quote2:Quote2,
+        Description:<FormattedMessage id = "I studied" defaultMessage="I studied Graphic Design for 6 months at Kosova Training,I have
+        learned a lot and im not planning to stop I loved the course, teachers, lectures..."/>,
+        infoStudent:<FormattedMessage id="amina" defaultMessage="Amina Malik"/>,
+        status:<FormattedMessage id="ST" defaultMessage= "(Student)" />
+    },
+    {
+        icon:iconCard2,
+        Quote:Quote1,
+        Quote2:Quote2,
+        Description:<FormattedMessage id="Help" defaultMessage="Kosova Training helped me a lot! Not only does my resume looks impressive-
+        field with certificates also bring me closer to my career goal."/>,
+        infoStudent:<FormattedMessage id="Ashton" defaultMessage="Ashton Smith"/>,
+        status:<FormattedMessage id="S" defaultMessage="(Student)"/>
+
+
+    }
+
+
 ]
