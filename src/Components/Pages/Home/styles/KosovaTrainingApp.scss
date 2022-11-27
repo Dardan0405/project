@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+.ImageBackground-KosovaTrainingApp{
+background:  
+url('../../../../assets/Shared/KosovaBusiness/Background.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+background-attachment: inherit;
+position: relative;
+width: 100%;
+height: 82%;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+
+}
+
+
+
+
+.image1-KosovaTrainingApp{
+content: url('../../../../assets/Home/KosovaTrainingApp/Color.jpg');
+position: relative;
+left: 17%;
+width: 47%;
+margin-top: -4%;
+}
+
+
+.image2-KosovaTrainingApp{
+    content: url('../../../../assets/Home/KosovaTrainingApp/image.png');
+    position: relative;
+    margin-top: -35%;
+    left: 10.5%;
+    width: 58%;
+}
+.TitleContainerKosova-TrainingApp{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-right: 56%;
+    margin-top: 1%;
+    font-family: 'Poppins', sans-serif;
+    h4{
+        position: relative;
+        margin-top: -39%;
+        width: 24%;
+        margin-left: -9%;
+        font-size: 28px; 
+        margin-bottom: -6%;
+        font-weight: bold;
+    }
+    p{
+        font-size: 15px;
+        position: relative;
+        width: 29%;
+        padding: 3% 0%;
+        margin-top: 5%;
+        margin-bottom: -1%;
+        margin-left: -4%;
+    }
+}
+.Download-AppStore-PlayStore{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 28%;
+    margin-top: 1%;
+    margin-left:-7%;
+    margin-bottom: -3%;
+}
+.Border-AppStore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+    position: relative;
+    left: -25%;
+    width: 33%;
+    background-color: rgba(255,225,225,11%);
+    border-radius: 4px;
+    height: 40px;
+
+}
+.Border-PlayStore{
+display: flex;
+justify-content: center;
+align-items: center;
+border: 1px solid transparent;
+position: relative;
+left: 5%;
+width: 33%;
+background-color: rgba(255,225,225,11%);
+border-radius: 4px;
+height: 40px;
+}

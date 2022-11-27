@@ -10,6 +10,9 @@ import Statistics from "../../Components/Pages/Home/Statistics";
 import Rightpick from "../../Components/Pages/Home/Rightpick";
 import KosovaBusiness from "../../Components/Shared/KosovaTrainingBusiness/KosovaTrainingBusiness";
 import WordsfromStudents from "../../Components/Pages/Home/WordsfromKosovaTraining";
+import OurBlog from "../../Components/Pages/Home/OurBlog";
+import KosovaTrainingApp from "../../Components/Pages/Home/KosovaTrainingApp";
+import Footer from "../../Components/Shared/Footer/Footer";
 const Home =() => { 
     return(
         <div className="Homepage">
@@ -24,6 +27,9 @@ const Home =() => {
             <Rightpick/>
             <KosovaBusiness/>
             <WordsfromStudents/>
+            <OurBlog/>
+            <KosovaTrainingApp/>
+            <Footer/>
        
         </div>
     )

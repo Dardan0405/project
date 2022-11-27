@@ -12,7 +12,7 @@
 
 
 .RightPick-ImageContainer{
-    background:linear-gradient(156deg, rgba(0, 0, 0, 20%),   rgba(112,112, 112,100%)),  
+    background:linear-gradient(156deg, rgba(0, 0, 0, 0%),   rgba(112,112, 112,66%)),  
     url('../../../../assets/Home/RightPIck/Image.jpg');
     display: flex;
     width: 31%;
@@ -37,14 +37,17 @@
     margin-top: -21%;
     width: 103%;
     h4{
-        font-size: 38px;
+        font-size: 35px;
         width: 80%;
         margin: 5% 0%;
         font-family: 'Poppins', sans-serif;
     }
+    span{
+        font-weight: bold;
+    }
     p{
-        width: 77.5%;
-        font-size: 18px;
+        width: 69.5%;
+        font-size: 15px;
         font-family: 'Poppins', sans-serif;
         margin-bottom: 3%;
     }
@@ -54,39 +57,41 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 6%;
+    margin-top: 8%;
 }
 .Links-RightPick{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 5%;
+    padding: 2%;
     margin-left: -120%;
-    margin-bottom: 9%;
+    margin-bottom: 7%;
     font-family: 'Poppins', sans-serif;
 }
 .Take-aquiz-Rightpick{
     border-radius: 30px;
-    font-size: 16px;
+    font-size: 15px;
     display: flex;
-    width: 95%;
+    width: 94%;
     justify-content: center;
-    height: 42px;
+    height: 48px;
     background: #6e53ff;
     align-items: center;
+   a{
     color: #ffff;
+   }
 }
 .Learn-more-RightPick{
-    margin-right: -118%;
+    margin-right: -99%;
     border: 1px solid #5b47c9;
     color: #5b47c9;
     border-radius: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 42px;
-    font-size: 16px;
-    width: 95%;
+    height: 48px;
+    font-size: 15px;
+    width: 94%;
 }
 .Icon-redblueorangeRightPick{
     display: flex;

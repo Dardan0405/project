@@ -30,8 +30,9 @@ const TopCategories =() =>{
     return(
         <div className='Top-Categories'>
             <div className='TopCategories-Title'>
-                <h1><FormattedMessage id='Browse' defaultMessage='Browse Course'
-              /><span>  with Top Categories</span></h1>
+                <h1><FormattedMessage id='Browse' defaultMessage='Browse Course'/>
+                <span>  with Top Categories</span>
+                </h1>
               </div>
               <Carousel className="slider styled-arrows" 
                 breakPoints={breakPoints}

@@ -9,6 +9,11 @@ import iconCard1 from '../../../assets/Home/WordsfromStudents/iconCard1.png'
 import Quote1 from '../../../assets/Home/WordsfromStudents/Quote1.svg'
 import Quote2 from '../../../assets/Home/WordsfromStudents/Quote2.svg'
 import iconCard2 from '../../../assets/Home/WordsfromStudents/iconCard2.png'
+import image1 from '../../../assets/Home/OurBlog/image1.png'
+import image2 from '../../../assets/Home/OurBlog/image2.png'
+import image3 from '../../../assets/Home/OurBlog/image3.png'
+import clock from '../../../assets/Home/OurBlog/clock.svg'
+import eye from '../../../assets/Home/OurBlog/eye.svg'
 export const TopCategoriesdata =[
 {
 to: '/',
@@ -76,5 +81,34 @@ export const dataCards =[
 
     }
 
+
+]
+
+export const DataBlog =[
+    {
+      image:image1,
+      title:<FormattedMessage id="Women"  defaultMessage="Women Are Becoming Climate Leaders Through New Online ..."/>,
+      Time:clock,
+      date:<FormattedMessage id="22" defaultMessage="March 22,2022"/>,
+      icon:eye,
+      views:<FormattedMessage id="40" defaultMessage="402,071 Views"/>
+
+    },
+    {
+        image:image2,
+        title:<FormattedMessage id="Trending"  defaultMessage="Trending online courses in business, data science,health..."/>,
+        Time:clock,
+        date:<FormattedMessage id="18" defaultMessage="March 18,2022"/>,
+        icon:eye,
+        views:<FormattedMessage id="34" defaultMessage="342,272 Views"/>
+    },
+    {
+        image:image3,
+        title:<FormattedMessage id="By"  defaultMessage="By desinging a healthy learning scheudle, Janelle`s on her way..."/>,
+        Time:clock,
+        date:<FormattedMessage id="12" defaultMessage="March 12 2022"/>,
+        icon:eye,
+        views:<FormattedMessage id="29" defaultMessage="292,971 Views"/>
+    }
 
 ]

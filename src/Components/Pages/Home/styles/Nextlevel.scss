@@ -5,7 +5,7 @@
     overflow: inherit;
 }
 .Homepage .Next{
-    background:linear-gradient(156deg, rgba(112, 112, 112, 100%),   rgba(59, 55, 55, 0)),  
+    background:linear-gradient(89deg, rgba(15, 13, 15, 70%),   rgba(112, 112, 112, 18%)),  
     url('../../../../assets/Home/ImagesForHome/Nextlevel.png');
     background-repeat:no-repeat;
 
@@ -17,14 +17,14 @@
     background-attachment: initial;
     position: relative;
     width: 100%;
-    color: #fff;
+   
     text-align: inherit;
     .Learning{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         margin-bottom: 8%;
-        width: 74%;
+        width: max(81%,2vw);
         margin-left: -31%;
         position: relative;
         @media  (max-width: 1450px){
@@ -35,7 +35,7 @@
    .Learning h1{
         position: relative;
         font-size:50px;
-        width: 95%;
+        width: (95%,2vw);
        
        font-family: 'Poppins', sans-serif;
     }
@@ -55,7 +55,7 @@
    .Learning p{
         margin: 5%;
         font-size: 20px;
-        width: 86%;
+        width: max(86%,2vw);
         margin-left: -1%;
         font-family: 'Poppins', sans-serif;
     }
@@ -67,7 +67,7 @@
     align-items: center;
     margin: 0%;
     font-size: 19px;
-    width: 50%;
+    width: max(50%,2vw);
     margin-top: 0;
     margin-left: -3%;
     @media  (max-width: 1450px){
@@ -79,11 +79,11 @@
     .Join-for-free{
         font-size: 15px;
         border-radius: 30px;
-        padding: 12px 20px;
+        padding: 11px 24px;
         background-color: #6E53FF;
         color: white;
         text-decoration: none;
-        width: 40%;
+        width: max(40%,2vw);
         font-family: 'Poppins', sans-serif;
     }
     .Play{
@@ -94,8 +94,9 @@
         flex-direction: row;
         background-color: transparent;
         border-color: transparent;
-        width: 52%;
+        width: max(52%,2vw);
         font-size: 15px;
+        cursor: pointer;
         h4{
             margin-left: 3%;
             font-size: 15px;
@@ -120,7 +121,7 @@
     
     }
 .Next .Card{
-    width:34%;
+    width:max(34%,2vw);
     cursor: pointer;
     display: flex;
     position: relative;
@@ -170,13 +171,13 @@
 }
  .Container .Info{
     display:flex;
-    margin-bottom:1%;
+    margin-bottom:5%;
     position:relative;
     flex-direction:column;
     height:71px;
     justify-content:flex-start;
     align-items:flex-start;
-    width: 51%;
+    width: max(51%,2vw);
     margin-left: 3%;
     margin-top: 12%;
     
@@ -202,7 +203,7 @@
 
 .Next .Card3{
     background-color: white;
-    width: 23%;
+    width: max(23%,2vw);
     float: right;
     margin-top: -34%;
     margin-right: -34%;
@@ -236,10 +237,10 @@
     margin-right: 12%;
     margin-top: 28%;
     .Circle-student{
-        background-color:rgb(75, 60,153,22%) ;
+        background-color:rgb(75, 60,153,14%) ;
         border-radius: 50%;
         height: 52px;
-        width: 58px;
+        width: 52px;
     }
     .total-students{
         height: 87%;
@@ -296,8 +297,8 @@
 }
 }
 .Card2{
-    background-color: white;
-    width: 23%;
+    background-color: #fff;
+    width: max(23%,2vw);
     float:right ;
     height: 204px;
     position: relative;
@@ -320,7 +321,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border-bottom: 1px solid #D6D6D6;
+    border-bottom: 1px solid rgba(214,214,214,34%);
 }
  .Bord-Circle{
     width: 97%;
@@ -388,7 +389,7 @@
      
     position: absolute;
     width: 100%;
-    margin-top: 101%;
+    margin-top: 106%;
     justify-content: flex-start;
     align-items: center;
     .Logo2{
@@ -399,12 +400,12 @@
  }
  .Logo2 .square-percent{
     background-color: #fff;
-    height: 45px;
-    width: 47px;
+    height: 46px;
+    width: 44px;
     border-radius: 16px;
     box-shadow: rgba(255, 187, 0, 65%) 0px 5px 15px;
     .Medal{
-        height: 44px;
+        height: 50px;
         width: 52%;
         margin-left: 24%;
 
@@ -417,7 +418,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 104%;
+    width: 100%;
     margin-bottom: 33%;
     margin-right: 5%;
     p{
@@ -432,6 +433,6 @@
         margin-right: 57%;
         margin-bottom: 3%;
         font-family: 'Poppins', sans-serif;
-
+        color: #a7a7a7;
     }
 }

@@ -6,6 +6,8 @@ import icon2 from '../../../assets/Home/WordsfromStudents/icon2.png'
 import icon3 from '../../../assets/Home/WordsfromStudents/icon3.png'
 import { dataCards } from "./data";
 import './styles/WordsfromKosovaTraining.scss'
+import icon4 from '../../../assets/Home/WordsfromStudents/icon4.png'
+import icon5 from '../../../assets/Home/WordsfromStudents/icon5.png'
 const breakPoints =[
 {width:1, itemsToShow:1},
 {width:700, itemsToShow: 2}
@@ -34,7 +36,7 @@ return(
         <div className="Circle-StudentWords1"style={{content:`url(${icon2})`}}></div>
         <div className="Circle-StudentWords2"style={{content:`url(${icon3})`}}></div>
      </div>
-     <Carousel className="slider styled-arrows" 
+     <Carousel className="slider styled-arrow" 
                 breakPoints={breakPoints}
                 ref={carouselRef}
                 onPrevStart={onPrevStart}
@@ -68,7 +70,10 @@ return(
              )
               })}
                 </Carousel>
-     
+     <div className="Circle-PhotosStudents1">
+        <div className="Circle-StudentWords3"style={{content:`url(${icon4})`}} ></div>
+        <div className="Circle-StudentWords4"style={{content:`url(${icon5})`}} ></div>
+     </div>
 
     </div>
 )

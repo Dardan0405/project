@@ -33,7 +33,7 @@ const  RecomandedCourse=() =>{
     };
     return(
         <div className="Recomaded-Coruse-Container">
-            <h1><FormattedMessage id="Recomanded" defaultMessage= "Recomanded"/>
+            <h1><FormattedMessage id="Recomanded" defaultMessage= "Recommended"/>
             <span> Courses</span></h1>
            
           
