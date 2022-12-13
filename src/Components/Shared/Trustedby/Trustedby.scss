@@ -1,10 +1,7 @@
 .Trusted-by-manycomapnies{
     margin: 3.5%;
-    padding: 0 35%;
-    @media(max-width:1500px){
-        width: 100%;
-        
-    }
+    padding: 0% 35%;
+   
   
     
     }
@@ -12,6 +9,39 @@
         width: 100%;
         height: 16px;
         position: relative;
+        margin-bottom: 20%;
+        @media(max-width:1349px){
+            
+            margin-bottom: -33%;
+        }
+        @media(max-width:1230px){
+            margin-bottom: -22%;
+            
+        }
+        @media(max-width:1112px){
+            margin-bottom: -11%;
+        }
+        @media(max-width:977px){
+            margin-bottom: 6%;
+        }
+        @media(max-width:753px){
+            margin-bottom: 31%;
+        }
+        @media(max-width: 750px){
+            margin-bottom: 43%;
+        }
+        @media(max-width: 669px){
+            margin-bottom: 62%;
+        }
+        @media(max-width:555px){
+            margin-bottom: 71%;
+        }
+        @media(max-width:519px){
+            margin-bottom: 127%;
+        }
+        @media(max-width: 433px){
+            margin-bottom: 222%;
+        }
         
     }
 .Line-row::after, .Line-row::before{ 
@@ -28,44 +58,107 @@
 
 }
 .Line-row::before{
-    right: -4%;
+    right: 2%;
 }
 .Trusted-title{
     font-size: 18px;
     width: 80%;
 }
-.Logo-Trustedby{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.Logo-Trustedby .Logo-Container{
-    width:149%;
-    margin: max(49px,1vw )2%;
-    display: flex;
-    justify-content: center;
-    .Logo-comapnies{
-        height: 82px;
-        max-width: 177%;
-        padding: 1% 22% 1% 17%;
+.Trusted-by-icon{
 
-    }
-    
+display: flex;
+justify-content: center;
+align-items: center;
+
+position: relative;
+@media(max-width: 1349px){
+    width: 111%;
+  
+    padding: 58%;
 }
+}
+
+  .Logo-Container{
+    
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    margin: max(21px,1vw)0%;
+    width: 350%;
+    @media(max-width:1230px){
+        justify-content: center;
+    }
+   
+    @media(max-width: 750px){
+        width: 680px;
+        max-width: 278%;
+    }
+   
+}
+
+
+
+
 .logo-row1{
-   width: 91%;
+    
+   
+   
+   height: max(73px,2vw);
+   margin: max(74px,2vw);
+   content: url('../../../assets/Shared/Trusted/logo111.png');
+   @media(max-width: 750px){
+    height: max(61px,2vw);
+    margin: max(58px,2vw);
+   }
 }
 .logo-row2{
-    width: 69%;
+    
+   height: max(40px,3vw);
+    position: relative;
+    margin: max(30px,1vw);
+    content: url('../../../assets/Shared/Trusted/logo222.png');
+    @media(max-width: 750px){
+        height: max(35px,3vw);
+        margin: max(20px,1vw);
+    }
 }
 .logo-row3{
-    width: 76%;
+    
+
+    height: max(46px,2vw);
+    margin: max(52px,1vw);
+    
+    content: url('../../../assets/Shared//Trusted/logo333.png');
+   @media(max-width: 750px){
+    height: max(38px,2vw);
+    margin: max(45px,1vw);
+   } 
 }
 .logo-row4{
-   width: 81%;
+    
+    margin-top: -1%;
+    margin-right: 81px;
+    
+    height: max(49px,2vw);
+   content: url('../../../assets/Shared/Trusted/logo444.png');
+   @media(max-width: 750px){
+    margin-right: 73px;
+    height: max(39px,2vw);
+   }
 }
 
 .logo-row5{
-    width: 86%;
+    
+    
+    
+    height: max(32px,1vw);
+    margin:max(37px,1vw);
+    content: url('../../../assets/Shared/Trusted/logo555.png');
+    @media(max-width: 750px){
+        height: max(31px,1vw);
+        margin: max(20px,1vw);
+    }
 }

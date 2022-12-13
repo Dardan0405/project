@@ -100,6 +100,13 @@ margin-bottom: -2%;
     position: relative;
     margin-top: 3%;
     margin-left: -9%;
+    &:hover{
+        transform: translateY(5px);
+        -webkit-transform: translateY(5px);
+    }
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+  
     .About-Circle{
         font-size: 16px;
         border-radius: 29px;
@@ -136,7 +143,14 @@ margin-bottom: -2%;
     border: 1px solid transparent;
     &:hover{
         border: 1px solid #e5e5e5;
+        transform: translateX(20px);
+        -webkit-transform: translateX(20px);
+        
     }
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+  
+    
     .Containers-CardsCertificaton {
         align-items: center;
         display: flex;
@@ -150,6 +164,7 @@ margin-bottom: -2%;
     position: relative;
     margin-left: 2%;
     .Square-Certification{
+        box-shadow: rgba(255, 208, 133, 100%) 0px 25px 50px -12px;
         background-color: #FFD085;
         height: 52px;
         width: 53px;
@@ -200,7 +215,12 @@ margin-bottom: -2%;
     border: 1px solid transparent;
     &:hover{
         border: 1px solid #e5e5e5;
+        transform: translateX(20px);
+        -webkit-transform: translateX(20px);
     }
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+  
     .Containers-CardsExpert{
         display: flex;
         align-items: center;
@@ -215,6 +235,7 @@ margin-bottom: -2%;
     margin-left: 2%;
     .Square-Expert{
         width: 53px;
+        box-shadow: rgba(92, 161, 254, 100%) 0px 25px 50px -12px;
         background-color: #5CA1FE;
         height: 52px;
         border-radius: 19px;
@@ -264,7 +285,12 @@ margin-bottom: -2%;
     
     &:hover{
         border: 1px solid #e5e5e5;
+        transform: translateX(20px);
+        -webkit-transform: translateX(20px);
     }
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    
     .Containers-Flexible{
         display: flex;
         align-items: center;
@@ -278,6 +304,7 @@ margin-bottom: -2%;
     display: flex;
     margin-left: 2%;
     .Square-Flexible{
+        box-shadow: rgba(255,133, 138, 100%) 0px 25px 50px -12px;
         background-color: #FF858A;
         height: 52px;
         width: 53px;

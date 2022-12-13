@@ -77,6 +77,12 @@ align-items: center;
     font-family: 'Poppins', sans-serif;
     margin: 6% 0% -6%;
     font-size: 14px;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    &:hover{
+         transform: translateX(15px);
+         -webkit-transform: translateX(15px);
+    }
     a{
         color: #fff;
     }

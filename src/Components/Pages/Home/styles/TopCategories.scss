@@ -16,7 +16,12 @@
     position: relative;
     &:hover{
         box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+     
     }
+
+
+    
+   
 }
 .rec-pagination{
     display: none;
@@ -112,6 +117,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    &:hover{
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+    }
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
 .view-all-Top{
     display: flex;
     position: relative;

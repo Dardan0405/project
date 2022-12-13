@@ -18,6 +18,7 @@ import medal  from '../../../assets/Home/ImagesForHome/medal.svg'
 
 
 
+
 const Next  =() =>{
     return(
 <div className="Next">
@@ -60,7 +61,7 @@ const Next  =() =>{
         </div>
         <div className="Info">
         <p> <FormattedMessage id ="Graphic" defaultMessage='Graphic design'/></p>
-        <h4><FormattedMessage id="Begginer" defaultMessage='Begginer'/></h4>
+        <h4><FormattedMessage id="Begginer" defaultMessage='Beginner'/></h4>
         </div>
         <div className="Arrow-r">
             <div  className="Right" style={{content:`url(${Arrowright})`}}></div>
@@ -73,10 +74,13 @@ const Next  =() =>{
 
     <div className="Card2">
     <div className="Container2">
+    
         <div className="Bord-Circle"></div>
+        
         <div className="Precentage-Border">
             <p className="Zero"><FormattedMessage id='0%' defaultMessage='0%'/></p>
             <p className="Hundred"><FormattedMessage id="100%" defaultMessage='100%'/> </p>
+        
         </div>
         <div className="Info2">
         <h4><FormattedMessage id="50" defaultMessage='50%'/> </h4>

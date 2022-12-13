@@ -53,11 +53,23 @@
 
 
 }
+.inner-cotentRec .image-containerRec{
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.inner-cotentRec:hover .image-containerRec{
+    -webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+
 .Image-Rec{
     position: relative;
     overflow: hidden;
     width: 100%;
-    
+   
     .image-containerRec{
         width: 100%;
        
@@ -141,6 +153,12 @@
     border-radius: 30px;
     margin-left: 2%;
     font-family: 'Poppins', sans-serif;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    &:hover{
+         transform: translateX(15px);
+         -webkit-transform: translateX(15px);
+    }
     a{
         display: flex;
         justify-content: center;

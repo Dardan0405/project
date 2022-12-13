@@ -13,6 +13,7 @@ import "aos/dist/aos.css";
 import {IntlProvider} from 'react-intl'
 import { translate } from './translation/translate';
 import{useSelector} from 'react-redux'
+
 const Home = lazy  (() => import ('./Pages/Home/Home'));
 
 function App () {
