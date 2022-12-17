@@ -16,13 +16,31 @@
     position: relative;
     &:hover{
         box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+        .border-top{
+            background-color: #1F6FEB;
+        
+        }
+        .Icon-Top{
+           filter: brightness(3);
+        }
+        .Ttile-Container-Top{
+            color: #1F6FEB;
+        }
      
     }
 
 
-    
+    @media(max-width: 1999px){
+        width: 94%;
+        padding: 17%;
+    }
+    @media(max-width: 800px){
+        width: 97%;
+    }
    
 }
+
+
 .rec-pagination{
     display: none;
 }
@@ -38,6 +56,10 @@
         z-index: 3;
     width: 36px;
     max-height: max(29px,2vw);
+    @media(max-width: 800px){
+        width: 24px;
+        max-height: (24px,2vw);
+    }
     
 
     }
@@ -53,11 +75,11 @@
         justify-content: center;
         align-items: center;
         border-width: 1px;
-        &:hover{
-            background-color: #2929D6;
-          
-            
-           }
+        @media(max-width: 800px){
+            height: 45px;
+            width: max(45px,2vw);
+        }
+    
     }
 }
 
@@ -69,6 +91,13 @@
     .Ttile-Container-Top{
         color: black;
         font-size: 20px;
+        @media(max-width: 1999px){
+            font-size: 15px;
+            font-weight: 600;
+        }
+        @media(max-width: 980px){
+            font-size: 12px;
+        }
     }
 }
 .bllock-TopCategories{
@@ -80,6 +109,13 @@
     font-family: 'Poppins', sans-serif;
     .Pargraph-Container-top{
         font-size: 14px;
+        @media(max-width:1258px){
+            font-size: 11px;
+        }
+        @media(max-width: 1058px){
+            font-size:10px;
+            font-weight: 600;
+        }
     }
 }
 
@@ -101,6 +137,9 @@
     font-family: 'Poppins', sans-serif;
     span{
         font-weight: bold;
+    }
+    @media(max-width: 988px){
+        width: 60%;
     }
     
 }
@@ -130,7 +169,12 @@
     align-items: center;
     color:  #4B3C99;
 }
+@media(max-width: 1024px){
+    width: 26%;
 }
+}
+
+
 .rec-swipable{
     align-items: stretch;
   }
@@ -139,8 +183,12 @@
     display: flex;
   }
   .styled-arrows{
+    
   .rec-pagintaion{
     display: none !important;
+  }
+  @media(max-width: 806px){
+    width: 84%;
   }
 }
   .styled-arrows{
@@ -159,7 +207,10 @@
       align-items: center;
       justify-content: center;
       font-size: max(19px,1vw);
-     
+      &:hover{
+        background-color: #1F6FEB;
+      }
+
   
     }
     

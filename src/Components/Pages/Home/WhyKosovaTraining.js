@@ -21,7 +21,7 @@ const Why =()=>{
 
             <div className="Info-WhyKS">
                 <div className="Info-contaier">
-                    <h1><FormattedMessage id="why Kosova" defaultMessage='Why Kosova Training'/></h1>
+                    <h1><FormattedMessage id="why Kosova" defaultMessage='Why '/> <span><FormattedMessage id="?" defaultMessage=' Kosova Training? '/></span></h1>
                     <p>
                         <FormattedMessage id="Beacouse" defaultMessage='Kosova Training gives you a wide range of options to advance in  
                          your career, switch careers, or archieve personal growth.

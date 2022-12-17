@@ -76,6 +76,24 @@ position: relative;
   
     padding: 58%;
 }
+@media(max-width: 1000px){
+    margin-bottom: 60%;
+}
+@media(max-width:830px){
+    margin-bottom: 95%;
+}
+@media(max-width: 630px){
+    margin-bottom: 110%;
+}
+@media(max-width: 519px){
+    margin-bottom: 170%;
+}
+@media(max-width: 433px){
+    margin-bottom: 230%;
+}
+@media(max-width: 380px){
+    margin-bottom: 280%;
+}
 }
 
   .Logo-Container{

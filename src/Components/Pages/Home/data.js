@@ -1,5 +1,5 @@
 import { FormattedMessage } from "react-intl";
-import Acc from '../../../assets/Home/Top-Categories/Acc.svg'
+
 import Bussineas from '../../../assets/Home/Top-Categories/Bussineas.svg'
 import Design from '../../../assets/Home/Top-Categories/Design.svg'
 import Dev from '../../../assets/Home/Top-Categories/Dev.svg'
@@ -14,6 +14,7 @@ import image2 from '../../../assets/Home/OurBlog/image2.png'
 import image3 from '../../../assets/Home/OurBlog/image3.png'
 import clock from '../../../assets/Home/OurBlog/clock.svg'
 import eye from '../../../assets/Home/OurBlog/eye.svg'
+import logo1 from '../../../assets/Home/Top-Categories/logo1.svg'
 export const TopCategoriesdata =[
 {
 to: '/',
@@ -52,7 +53,7 @@ color:'#6C5CE7'
 },
 {
    to: '/',
-   icon:Acc,
+   icon:logo1,
    title:<FormattedMessage id="Acc" defaultMessage="Accounting"/>,
    paragraph:<FormattedMessage id="89" defaultMessage="89 Courses"/>,
    color:'#3EB135'

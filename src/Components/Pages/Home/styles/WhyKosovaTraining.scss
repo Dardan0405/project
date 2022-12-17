@@ -7,6 +7,9 @@
     width: max(57%,2vw);
     height: auto;
     align-items: 0;
+    @media(max-width: 918px){
+        margin-bottom: 250%;
+    }
 }
 
 .Logos-WhyKs .Logo-Container-WhyKosovaTraining{
@@ -14,18 +17,47 @@
     flex-direction: column;
     width: 100%;
     align-items: center;
+    @media(max-width: 1000px){
+        margin-bottom: 12%;
+    }
+    @media(max-width: 773px){
+        margin-bottom: 32%;
+    }
+    @media(max-width: 500px){
+        margin-bottom: 27%;
+
+    }
 }
 .Icon-Olimpic {
     content: url('../../../../assets/Home/WhyKosovaTraining/Logo1.svg');
     width: 9%;
     margin-bottom: 3%;
     margin-right: 55%;
+    @media(max-width: 1000px){
+        width: 10%;
+    }
+    @media(max-width: 773px){
+        width: 12%;
+    }
+    @media(max-width: 500px){
+        width: 16%;
+
+    }
+    @media(max-width: 434px){
+        width: 20%;
+    }
 }
 .Icon-Half{
     content: url('../../../../assets/Home/WhyKosovaTraining/Logo2.svg');
     width: 9%;
     margin-right: 57%;
     margin-top: 25%;
+    @media(max-width: 1000px){
+        width: 10%;
+    }
+    @media(max-width: 773px){
+        display: none;
+    }
 }
 .Icon-Art{
     content: url('../../../../assets/Home/WhyKosovaTraining/Logo3.svg');
@@ -34,6 +66,12 @@
     margin-top: -22%;
     margin-left: -10%;
     margin-bottom: -4%;
+    @media(max-width: 1000px){
+        width: 10%;
+    }
+    @media(max-width: 773px){
+        display: none;
+    }
 }
 .Icon-HalfCircle{
     content: url('../../../../assets/Home/WhyKosovaTraining/Logo4.svg');
@@ -41,30 +79,86 @@ width: 9%;
 margin-top: -16%;
 margin-left: 18%;
 margin-bottom: -2%;
+@media(max-width: 1000px){
+    width: 10%;
+}
+@media(max-width: 773px){
+    width: 12%;
+    display: flex;
+    position: absolute;
+    margin-top: 31%;
+
+}
+@media(max-width: 605px){
+    margin-top: 45%;
+    width: 14%;
+}
+@media(max-width:434px){
+    margin-top: 76%;
+    width: 18%;
+
+}
 }
 .Icon-Book{
     content: url('../../../../assets/Home/WhyKosovaTraining/Logo5.svg');
     width: 9%;
     margin-top: 18%;
+
     margin-left: 15%;
+    @media(max-width: 1000px){
+        width: 10%;
+    }
+    @media(max-width: 773px){
+        display: none;
+    }
 }
 .Icon-Brush{
     content: url('../../../../assets/Home/WhyKosovaTraining/Logo6.svg');
     width: 9%;
     margin-top: -29%;
     margin-left: 54%;
+    @media(max-width: 1000px){
+        width: 10%;
+    }
+    @media(max-width: 773px){
+        margin-top: 43%;
+        position: absolute;
+        margin-left: 55%;
+        width: 14%;
+    }
+    @media(max-width: 605px){
+        margin-top: 49%;
+        margin-left: 48%;
+
+    }
+    @media(max-width: 500px){
+        margin-top: 66%;
+        margin-left: 61%;
+        width: 17%;
+    }
+    @media(max-width: 434px){
+        margin-top: 118%;
+        width: 19%;
+        
+    }
 }
 .Icon-2pieceIcon{
     content: url('../../../../assets/Home/WhyKosovaTraining/Logo7.svg');
     width: 9%;
     margin-top: -19%;
     margin-left: 74%;
+    @media(max-width: 1000px){
+        display: none;
+    }
 }
 .Icon-Calendar{
     content: url('../../../../assets/Home/WhyKosovaTraining/Logo8.svg');
     width: 9%;
     margin-top: 17%;
     margin-left: 76%;
+    @media(max-width: 1000px){
+        display: none;
+    }
 }
 .Info-WhyKS{
     width: 100%;
@@ -78,10 +172,21 @@ margin-bottom: -2%;
     
     margin-top: -40%;
     margin-left: 26%;
+
+    span{
+         
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+    }
     h1{
+         
+        font-family: 'Poppins', sans-serif;
         margin-left: -7%;
         margin-top: -2%;
         margin-bottom: 9%;
+        @media(max-width: 1349px){
+            width: 80%;
+        }
     }
     p{
         
@@ -90,9 +195,15 @@ margin-bottom: -2%;
         width: max(65%,2vw);
         margin-left: -9%;
         margin-top: -3.5%;
+        @media(max-width:1349px){
+            font-size: 14px;
+            width: max(67.6%,2vw);
+        }
        
     }
-    
+    @media(max-width: 1349px){
+        margin-top: -42%;
+    }
 }
 .About-UsKosovaTraining{
     display: flex;
@@ -110,7 +221,7 @@ margin-bottom: -2%;
     .About-Circle{
         font-size: 16px;
         border-radius: 29px;
-        background-color: #6E53FF;
+        background-color: #1f6feb;
         padding: 12px 45px;
         color: #fff;
 
@@ -123,10 +234,87 @@ margin-bottom: -2%;
     float: right;
     margin-right: -34%;
     margin-top: -33%;
+    @media(max-width: 1349px){
+        width: max(51%,2vw);
+        margin-top: -32%;
+    }
+    @media(max-width: 1147px){
+        margin-top: -35%;
+    }
 }
 .Boy-School{
     content: url('../../../../assets/Home/WhyKosovaTraining/BoySchool.svg');
     width: max(67%,2vw);
+    @media(max-width:1349px){
+        margin-top: -13%;
+        display: flex;
+        position: relative;
+    left: 1%;
+    width: max(71%,2vw);
+    }
+    @media(max-width: 1079px){
+        width: max(69%,2vw);
+        margin-top: -20%;
+        left: 0;
+    }
+    @media(max-width: 1103px){
+        width: max(70%,2vw );
+        margin-top: -19%;
+        left: 1%;
+    }
+    @media(max-width: 1000px)
+    {
+        width: max(75%,2vw);
+        margin-top: -28%;
+    
+    }
+    @media(max-width: 918px){
+        width: max(77%,2vw);
+        margin-top: -37%;
+    }
+    @media(max-width: 890px){
+        width: max(80%,2vw);
+        margin-top: -44%;
+        left: 5%;
+    }
+    @media(max-width: 795px){
+        margin-top: -39%;
+        left: 2%;
+        width: max(76%,2vw);
+    }
+    @media(max-width: 773px){
+        margin-top: -68%;
+        width: max(90%,2vw);
+        left:-11% ;
+    }
+    @media(max-width: 726px){
+        margin-top: -69%;
+        width: max(90%,2vw);
+
+    }
+    @media(max-width: 642px){
+        margin-top: -67%;
+        width: max(90%,2vw);
+    }
+    @media(max-width: 565px){
+        margin-top: -128%;
+    }
+    @media(max-width: 490px){
+        margin-top: -187%;
+        width: max(100%,32vw);
+    }
+    @media(max-width: 450px){
+        margin-top: -215%;
+
+    }
+    @media(max-width: 434px){
+        margin-top: -268%;
+    }
+    @media(max-width: 380px){
+        margin-top: -297%;
+        width: max(100%,40vw);
+    }
+
 }
 .cards-Certifications{
     float: right;
@@ -157,6 +345,56 @@ margin-bottom: -2%;
         width: 100%;
         position: relative;
         justify-content: center;
+        @media(max-width: 1349px){
+            margin-left: 8%;
+            
+        }
+        @media(max-width: 1170px){
+            margin-left: 5%;
+        }
+    }
+    @media(max-width:1349px){
+        margin-right: -68%;
+        margin-top: -33%;
+    }
+    @media(max-width: 1170px){
+        width: 59%;
+        margin-right:-83% ;
+
+    }
+    @media(max-width:1130px){
+        margin-right: -85%;
+    }
+    @media(max-width:1103px){
+        margin-top: -40%;
+    }
+    @media(max-width:1000px){
+        margin-top: -44%;
+    }
+    @media(max-width: 918px){
+        
+        
+        margin-top: -50%;
+        margin-right: -70%;
+        
+    }
+    @media(max-width: 773px){
+        margin-top: -64%;
+        margin-right: -67%;
+    }
+    @media(max-width: 668px){
+        margin-top: -72%;
+        margin-right: -69%;
+    }
+    @media(max-width: 565px){
+        margin-top: -103%;
+        margin-right: -65%;
+    }
+    @media(max-width: 539px){
+        margin-top: 42%;
+        margin-right: -43%;
+        right: 26%;
+        width: 77%;
     }
 }
 .Logo-CardsCertification{
@@ -177,6 +415,7 @@ margin-bottom: -2%;
             margin-left: 7%;
         }
    }
+  
 }
 .Info-Certificates{
     margin-left: 9%;
@@ -186,9 +425,13 @@ margin-bottom: -2%;
     justify-content: center;
     align-items: flex-start;
     h4{
+        font-weight: bold;
         font-size: 24px;
         color: #000;
         font-family: 'Poppins', sans-serif;
+        @media(max-width: 1170px){
+            font-size: 20px;
+        }
 
     }
     p{
@@ -197,8 +440,16 @@ margin-bottom: -2%;
         margin-top: 2%;
         font-family: 'Poppins', sans-serif;
         color: #656464;
+        @media(max-width:1349px){
+            font-size: 14px;
+        }
     }
-
+@media(max-width: 1170px){
+    margin-left: 1%;
+}
+@media(max-width: 918px){
+    margin-left: 2%;
+}
 }
 .cards-Expert{
     float: right;
@@ -227,6 +478,58 @@ margin-bottom: -2%;
         width: 100%;
         position: relative;
         justify-content: center;
+    }
+    @media(max-width:1349px){
+        margin-right: -73%;
+        margin-top: -16%;
+    }
+    @media(max-width: 1170px){
+        width: 59%;
+        margin-right:  -90%;
+    }
+    @media(max-width:1103px){
+        margin-top: -21%;
+    }
+   @media(max-width:1000px){
+    margin-top: -25%;
+    margin-right: -92%;
+   } 
+    
+    @media(max-width: 918px){
+        margin-top: -30%;
+        margin-right: -75%;
+    }
+    @media(max-width:773px){
+        margin-top: -44%;
+        margin-right: -74%;
+    }
+    @media(max-width: 700px){
+        top: 170%;
+    }
+    @media(max-width: 617px){
+        top: 163%;
+    }
+    @media(max-width:565px){
+        margin-top: -71%;
+        margin-right: -68%;
+
+
+    }
+
+    @media(max-width:539px){
+        margin-top: 99%;
+        margin-right: -56%;
+        right: -24%;
+        width: 91%;
+    }
+    @media(max-width: 578px){
+        top: 154%;
+    }
+    @media(max-width: 496px){
+        top: 145%;
+    }
+    @media(max-width: 413px){
+        top: 138%;
     }
 }
 .Logo-CardsExpert{
@@ -257,9 +560,13 @@ margin-bottom: -2%;
     position: relative;
     align-items: flex-start;
     h4{
+        font-weight: bold;
         font-size: 24px;
         color: #000;
         font-family: 'Poppins', sans-serif;
+        @media(max-width: 1170px){
+            font-size: 20px;
+        }
 
     }
     p{
@@ -267,6 +574,12 @@ margin-bottom: -2%;
         margin-top: 3%;
         font-family: 'Poppins', sans-serif;
         color: #656464;
+        @media(max-width:1349px){
+            font-size: 14px;
+        }
+        @media(max-width:1170px){
+            margin-left: 2%;
+        }
     }
 }
 .cards-Flexible{
@@ -298,6 +611,62 @@ margin-bottom: -2%;
         justify-content: center;
         position: relative;
     }
+    @media(max-width:1349px){
+        margin-top: 1%;
+        margin-right: -71%;
+    }
+    @media(max-width:1170px){
+        width: 59%;
+        margin-right: -90%;
+    }
+    @media(max-width:1130px){
+        margin-right: -86%;
+    }
+    @media(max-width:1103px){
+        margin-top: -3%;
+    }
+    @media(max-width: 918px){
+        margin-top: -5%;
+        margin-right: -70%;
+
+    }
+    @media(max-width:773px){
+        margin-top: -13%;
+        margin-right: -68%;
+    }
+    @media(max-width:704px){
+        margin-top: -4%;
+    }
+    @media(max-width:821px){
+        
+    }
+    @media(max-width:640px){
+        margin-top: 6%;
+        margin-right: -66%;
+    }
+    @media(max-width:565px){
+        margin-top: -6%;
+
+    }
+    @media(max-width:539px){
+        margin-top: 158%;
+        margin-right: -115%;
+        right: 27%;
+        width: 84%;
+    }
+    @media(max-width: 578px){
+        top: 186%;
+    }
+    
+    @media(max-width: 496px){
+        top: 179%;
+    }
+    @media(max-width: 425px){
+        margin-top: 175%;
+    }
+    @media(max-width: 390px){
+        margin-top: 209%;
+    }
 }
 .Logo-Flexible{
     position: relative;
@@ -325,10 +694,14 @@ margin-bottom: -2%;
     margin-left: 8%;
     flex-direction: column;
     position: relative;
-    h4{ 
+    h4{
+        font-weight: bold;
         font-size: 24px;
         color: #000;
         font-family: 'Poppins', sans-serif;
+        @media(max-width: 1170px){
+            font-size: 20px;
+        }
     }
     p{
         line-height: 21px;
@@ -336,5 +709,11 @@ margin-bottom: -2%;
         margin-top: 2%;
         font-family: 'Poppins', sans-serif;
         color: #656464;
+        @media(max-width:1349px){
+            font-size: 14px;
+        }
+        @media(max-width:1170px){
+            margin-left: 2%;
+        }
     }
 }
