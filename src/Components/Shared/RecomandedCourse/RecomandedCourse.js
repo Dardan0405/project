@@ -1,56 +1,43 @@
-import React from "react"
+import React, { useState } from 'react'
 import { FormattedMessage  } from 'react-intl'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 import { Recoamded } from "./data";
-import './RecomandedCourse.scss'
-import Carousel from 'react-elastic-carousel';
-import { Link } from "react-router-dom"
-const breakPoints =[
-    {width:1, itemsToShow:1},
-    {width:550, itemsToShow: 2},
-    {width:750, itemsToShow: 3},
-    {width:950, itemsToShow: 4},
-    {width:1050, itemsToShow: 5},
-    {width:1100,itemsToShow: 6},
-    {width:1200,itemsToShow: 7},
-    {width:1300, itemsToShow: 8}
+import './RecomandedCourse.scss';
+import Arrowleft from "../../../assets/Shared/Tabs/Arrowleft.svg"
+import {MdKeyboardArrowLeft,MdKeyboardArrowRight} from 'react-icons/md'
 
-  
-    
-];
+import Arrowright from "../../../assets/Shared/Tabs/Arrowright.svg"
+
+import { Link } from "react-router-dom"
+
 const  RecomandedCourse=() =>{
-    const carouselRef = React.useRef(null);
-    const onNextStart = (currentItem, nextItem
-        ) => {
-        if (currentItem.index === nextItem.index) {
-          carouselRef.current.goTo(0);
-        }
-    };
-    const onPrevStart = (currentItem, nextItem) => {
-        if (currentItem.index === nextItem.index) {
-          carouselRef.current.goTo('single-slide'.length);
-        }
-    };
+  const [selectedTab,setselectedTab] = useState(0);
+  const tabCount = 7;
+    
+   
     return(
         <div className="Recomaded-Coruse-Container">
             <h1><FormattedMessage id="Recomanded" defaultMessage= "Recommended"/>
             <span> Courses</span></h1>
            
           
+           
+             
+                <Tabs className ="Tab-Reomanded" selectedIndex={selectedTab} onSelect ={index => setselectedTab(index)}>
                 
-                
-                
-                
-                <Tabs className ="Tab-Reomanded">
                     
-                    <Carousel className="slider styled-arrows" 
-                breakPoints={breakPoints}
-                ref={carouselRef}
-                onPrevStart={onPrevStart}
-                onNextStart={onNextStart}
-                disableArrowsOnEnd={false}
-                >
-                    <TabList>
+                
+        
+                
+                <TabList>
+                    <div className='Border-Recomanded Border-left'>
+                  <button className='Arrow-left-Recomanded Arrow-Recomanded' 
+                  onClick={() => setselectedTab((selectedTab + tabCount -1)% tabCount)} >
+                    <MdKeyboardArrowLeft/>
+                  </button>
+                  </div>
+                    
+                 
                         <Tab><FormattedMessage id="al" defaultMessage="All"/></Tab>
                         <Tab><FormattedMessage id="Design" defaultMessage="Design"/></Tab>
                         <Tab><FormattedMessage id="Dev" defaultMessage="Development"/></Tab>
@@ -59,8 +46,24 @@ const  RecomandedCourse=() =>{
                         <Tab><FormattedMessage id="Photo" defaultMessage="Phtography"/></Tab>
                         <Tab><FormattedMessage id="Market" defaultMessage="Marketing"/></Tab>
                         <Tab><FormattedMessage id="Finance" defaultMessage="Finance & Accounting"/></Tab>
-                    </TabList>
-                    </Carousel>
+
+
+                        <div className='Border-Recomanded Border-Right'>
+                        <button className='Arrow-right-Recomanded Arrow-Recomanded' onClick={() => setselectedTab((selectedTab +1 )% tabCount) }
+                       > 
+                       <MdKeyboardArrowRight/>
+
+                        </button>
+                       </div>
+                        </TabList>
+                        
+                        
+                    
+                    
+                    
+                    
+                    
+                    
                   
                     <div className="Tabs-Containers">
                      {Recoamded.map((props)=> {
@@ -123,6 +126,7 @@ const  RecomandedCourse=() =>{
                     </div>
 
                     </Tabs>
+                    
                     <div className="Link-RecomandedL">
                     <Link>Load More</Link>
                      </div>
@@ -132,6 +136,7 @@ const  RecomandedCourse=() =>{
         
         
     )
+    
    
 }
 export default RecomandedCourse

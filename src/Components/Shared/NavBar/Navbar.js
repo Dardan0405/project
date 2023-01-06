@@ -1,13 +1,14 @@
 import React, { useState,useEffect } from "react";
 import {Link} from 'react-router-dom';
 import clsx from "clsx";
-import Logo from '../../../assets/Home/Logo.jpg'
+import Logo from '../../../assets/Nav/Logo.png'
 import { FormattedMessage } from "react-intl";
 import{MdKeyboardArrowDown} from 'react-icons/md'
 
 import MobileNav from "../MobileNav/MobileNav";
-import { BiFilterAlt, BiSearch } from "react-icons/bi";
-import { FiShoppingCart } from "react-icons/fi";
+import { BiSearch } from "react-icons/bi";
+
+import { FiShoppingCart,FiFilter } from "react-icons/fi";
 import './Navbar.scss'
 import Resources from "./Megamenus/Resources";
 import Course from "./Megamenus/Courses";
@@ -38,7 +39,7 @@ const Navbar = (props) =>{
          
          <div className="left-side">
             <Link to='/' className="navlogo">
-                <div className="logo-container" style={{content: `url(${Logo})`}}>
+                <div className="logo-container" >
                 </div>
             </Link>
             </div>
@@ -107,7 +108,7 @@ const Navbar = (props) =>{
                 ></input>
                 <div className=" filter-container">
                 <button className="filter">
-                        <BiFilterAlt />
+                        <FiFilter/>
                     </button>
                     </div>
                 </form>

@@ -10,6 +10,7 @@ padding: max(2%, 2%)30%;
 background-attachment: inherit;
 color: white;
 position: relative;
+
 }
 .JoinTeam-Ttiles{
     display: flex;
@@ -17,7 +18,7 @@ position: relative;
     align-items: center;
     text-align: center;
     margin-bottom: 5%;
-    width: maX(96%,2VW);
+    width: maX(96%,2vw);
 
     margin-top: 3%;
     line-height: 60px;
@@ -26,10 +27,39 @@ position: relative;
         margin-top: 1%;
         font-weight: bold;
         font-family: 'Poppins', sans-serif;
+        @media(max-width: 1349px){
+            font-size: 40px;
+            width: max(90%,2vw);
+           
+        }
+        @media(max-width: 1280px){
+            font-size: 33px;
+            width: max(100%,2vw);
+        }
+        
     }
     span{
       color: #ffa200;  
     }
+    @media(max-width: 1349px){
+        width: max(100%,2vw);
+        margin-top: 1%;
+
+    }
+    .img-JoinTeam{
+    
+        @media(max-width: 953px){
+            width: max(50%,2vw);
+        }
+        @media(max-width: 680px){
+            width: max(65%,2vw);
+        }
+        @media(max-width: 470px){
+            width: max(81%,2vw);
+        }
+    }
+  
+
 }
 .Pargraph-JoinTeam{
     display: flex;
@@ -42,6 +72,10 @@ position: relative;
     margin-left: 16%;
     margin-bottom: -4%;
     padding: 1% 1%;
+    @media(max-width: 1045px){
+        width: max(100%,2vw);
+        font-size: 14px;
+    }
 }
 .Links-JoinUsTeam{
 
@@ -68,5 +102,10 @@ position: relative;
     a{
         color: white;
         font-family: 'Poppins', sans-serif;
+    }
+    @media(max-width: 900px){
+        width: 50.5%;
+        height: 41px;
+        
     }
 }

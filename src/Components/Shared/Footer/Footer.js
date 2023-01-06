@@ -61,6 +61,7 @@ const Footer =() =>{
                 </div>
                 <div className="Bottom-rowFooter">
                     <p><FormattedMessage id="2022" defaultMessage="©2022 KosovaTraining. All rights reserved"/></p>
+                    
                     <div className="Icons-Foooter">
                         {Footericons.map((props)=>{
                         return(
@@ -70,9 +71,11 @@ const Footer =() =>{
                     </div>
                     <div className="Reserved-Footer">
                         <p><FormattedMessage id="Copyright" defaultMessage="Copyright | Terms of Use"/></p>
-                    </div>
+                        </div>
+                    
                 </div>
-            </div>
+                </div>
+            
         
     )
 }

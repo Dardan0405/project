@@ -17,14 +17,14 @@
     &:hover{
         box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
         .border-top{
-            background-color: #1F6FEB;
+            background-color:var(--main-color);
         
         }
         .Icon-Top{
            filter: brightness(3);
         }
         .Ttile-Container-Top{
-            color: #1F6FEB;
+            color: var(--main-color);
         }
      
     }
@@ -40,9 +40,10 @@
    
 }
 
-
+.Top-Categories{
 .rec-pagination{
-    display: none;
+    display: none !important;
+}
 }
 .Cards-topcategoties .Icon-Container-Top{
     display: flex;
@@ -149,7 +150,7 @@
     border-radius: 30px;
     height: 41px;
     width: max(11%,2vw);
-    border: 1px solid rgba(75,60,153,50%);
+    border: 1px solid rgba(var(--main-rgb),0.5);
     margin: 3% 45%;
     position: relative;
     padding: 0.6% 2%;
@@ -167,7 +168,7 @@
     position: relative;
     justify-content: center;
     align-items: center;
-    color:  #4B3C99;
+    color:  var(--main-color);
 }
 @media(max-width: 1024px){
     width: 26%;
@@ -208,11 +209,12 @@
       justify-content: center;
       font-size: max(19px,1vw);
       &:hover{
-        background-color: #1F6FEB;
+        background-color:var(--main-color);
       }
 
   
     }
     
   }
+
 

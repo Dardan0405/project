@@ -573,7 +573,7 @@
         max-width: 100%;
         min-width: max(86px,1vw);
         padding: 13px 34px;
-        background-color: #1f6feb;
+        background: var(--main-color);
         color: #fff;
         text-decoration: none;
         
@@ -661,7 +661,7 @@
     .triangle{
         width: 19px;
         height: 23px;
-        color: #1f6feb;
+        color: var(--main-color);
         @media(max-width: 464px){
             width: 19px;
             height: 23px;

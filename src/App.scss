@@ -1,3 +1,4 @@
+
 *,
 *::after,
 *::before {
@@ -31,130 +32,40 @@ body::-webkit-scrollbar-thumb {
   border-radius: 1px;
 }
 
-.theme-purple{
-  background: #4E387E;
-  
-}
-.theme-red{
-  background:rgba(237,47,60,87%)
-} 
-
-
-.theme-blue{
-  background-color:rgba(28,49,238,100%)
-
-}
-.theme-orange{
-  background-color: rgba(229,114, 13, 100%);
-
-}
- .theme-blue .Cards-topcategoties {
-  background-color: #052Ca3;
-} 
-.theme-blue .Link-Top{
-  background-color: #305EE4
-}
-.theme-blue .inner-cotentRec{
-  background-color: #052Ca3;
-}
-.theme-blue .Enrollnow-Rec{
-  background-color:#305EE4 ;
-}
-.theme-blue .Link-RecomandedL{
-  background-color:#305EE4
-}
-.theme-blue .Learn-more-RightPick{
-  background-color:#305EE4 ;
-}
-.theme-blue .OurBlog-Container{
-  background-color: #052Ca3;
-}
-.theme-blue .Link-Ourblog{
-  background-color:#305EE4 ;
-}
-
-.theme-orange .Cards-topcategoties{
-  background-color: #F88017;
-}
-.theme-orange .Link-Top{
-  background-color:#F87217 ;
-}
-.theme-orange .inner-cotentRec{
-  background-color: #F88017;
-}
-.theme-orange .Enrollnow-Rec{
-  background-color: #F87217;
-}
-.theme-orange .Link-RecomandedL{
-  background-color: #F87217;
-
-}
-.theme-orange .Learn-more-RightPick
-{
-  background-color: #F87217;
-}
-.theme-orange .OurBlog-Container{
-  background-color: #F88017;
-}
-.theme-orange .Link-Ourblog{
-  background-color: #F87217;
-}
 
 
 
-.theme-red .Cards-topcategoties{
-  background-color: #E41B17;
-}
-.theme-red .Link-Top{
-  background-color:#DC381F;
-}
-.theme-red .inner-cotentRec{
-  background-color: #E41B17;
-}
-.theme-red .Enrollnow-Rec{
-  background-color: #DC381F;
-}
-.theme-red .Link-RecomandedL{
-  background-color: #DC381F;
+:root{
+  --main-color:#1f6feb;
+  --main-rgb: 31,111,235;
+  --linear-rgb: 19,96,217;
+  .logo-container{
+    content: url('../src/assets/Nav/Logo.png');
 
+  }
 }
-.theme-red .Learn-more-RightPick
-{
-  background-color: #DC381F;
+body.theme-purple{
+  --main-color:#6e53ff;
+  --main-rgb: 110,83,255;
+  --linear-rgb: 110,83,255;
+  .logo-container{
+    content: url('../src/assets/Nav/Logopurple.png');
+  }
 }
-.theme-red .OurBlog-Container{
-  background-color: #DC381F;
-}
-.theme-red .Link-Ourblog{
-  background-color: #DC381F;
-}
+body.theme-red{
+  --main-color:#ed2f3c;
+  --main-rgb: 237,47,60;
+  --linear-rgb: 237,47,60;
+  .logo-container{
+    content: url('../src/assets/Nav/Logored.png');
 
-.theme-purple .Cards-topcategoties{
-  background-color: #7D1B7E;
+  }
 }
-.theme-purple .Link-Top{
-  background-color:#8467D7;
-}
-.theme-purple .inner-cotentRec{
-  background-color: #7D1B7E;
-}
-.theme-purple .Enrollnow-Rec{
-  background-color: #8467D7;
-}
-.theme-purple .Link-RecomandedL{
-  background-color: #8467D7;
-
-}
-.theme-purple .Learn-more-RightPick
-{
-  background-color: #8467D7;
-}
-.theme-purple .OurBlog-Container{
-  background-color: #8467D7;
-}
-.theme-purple .Link-Ourblog{
-  background-color: #8467D7;
-}
-.theme-purple .OurBlog-Container{
-  background-color: #7D1B7E;
+body.theme-orange{
+  --main-color:#e5720d;
+  --main-rgb: 229,114,13;
+  --linear-rgb: 229,114,13;
+  .logo-container{
+    content: url('../src/assets/Nav/Logoorange.png');
+  }
 }

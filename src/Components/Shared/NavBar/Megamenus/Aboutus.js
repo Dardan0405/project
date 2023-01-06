@@ -4,6 +4,8 @@ import './Megamenus.scss'
 import React from 'react'
 import { AboutUs } from './data1'
 import{BsFillPlayFill} from 'react-icons/bs'
+import {BsArrowRightCircle} from 'react-icons/bs'
+import Logo from '../../../../assets/Nav/Categories/Aboutus/Logo.png'
 
 const Aboutus =()=>{
     return(
@@ -26,6 +28,7 @@ const Aboutus =()=>{
      
                  }
                  )}
+                 <Link className='View-All-About'><FormattedMessage id='All' defaultMessage='View All'/>  <BsArrowRightCircle/></Link>
              </div>
          </div>
          <div className='Linee-Resources'>
@@ -34,7 +37,9 @@ const Aboutus =()=>{
 
     <div className='Get-started'>
         <h5><FormattedMessage id='Get' defaultMessage='Get Started'/></h5>
+
         <div className='Video'>
+            <div className='Logo-AboutUs'style={{content:`url(${Logo})`}} ></div>
             <h4><FormattedMessage id='Play' defaultMessage='Play intro video'/></h4>
             <div className='Circle'>
                 <div className='Triangle'><BsFillPlayFill/></div>

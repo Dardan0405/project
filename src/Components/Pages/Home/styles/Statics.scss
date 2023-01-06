@@ -17,6 +17,9 @@
     justify-content: space-around;
     margin-left: -2.6%;
     margin-top: -3.7%;
+    @media(max-width: 620px){
+        width: max(100%,2vw);
+    }
 }
 .Circle-purple{
     display: flex;
@@ -64,6 +67,9 @@ p{
     font-size: 12px;
     padding: 4%;
     color: #000;
+    @media(max-width: 1349px){
+        font-size: 10px;
+    }
 }
 }
 .Circle-red{

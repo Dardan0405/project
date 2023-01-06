@@ -10,7 +10,10 @@ import icon4 from '../../../assets/Home/WordsfromStudents/icon4.png'
 import icon5 from '../../../assets/Home/WordsfromStudents/icon5.png'
 const breakPoints =[
 {width:1, itemsToShow:1},
-{width:700, itemsToShow: 2}
+{width:700, itemsToShow: 2},
+{width:1400,itemsToShow:3},
+{width:2100,itemsToShow:4}
+
 ]
 
 const WordsfromStudents =() =>{

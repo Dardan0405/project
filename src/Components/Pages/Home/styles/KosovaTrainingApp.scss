@@ -2,8 +2,8 @@
 
 
 .ImageBackground-KosovaTrainingApp{
-background:  
-url('../../../../assets/Shared/KosovaBusiness/Background.jpg');
+background: linear-gradient(rgba(var(--linear-rgb),0.65),rgba(var(--linear-rgb),0.65)), 
+url('../../../../assets/Home/KosovaTrainingApp/Back.png');
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
@@ -15,6 +15,17 @@ display: flex;
 justify-content: center;
 flex-direction: column;
 align-items: center;
+@media(max-width: 477px){
+    padding: 3% 0% 4% 0%;
+}
+@media(max-width: 423px){
+    padding: 29% 0% 11% 3%;
+    
+}
+@media(max-width: 476px){
+    margin-bottom: -3%;
+    padding: 15% 0% 4% 5%;
+}
 
 }
 
@@ -24,29 +35,37 @@ align-items: center;
 .image1-KosovaTrainingApp{
 content: url('../../../../assets/Home/KosovaTrainingApp/Color.jpg');
 position: relative;
-left: 17%;
-width: 47%;
-margin-top: -4%;
+left: 27.5%;
+width: 45%;
+margin-top: -5%;
+@media(max-width: 350px)
+{
+    display: none;
+}
+
 }
 
 
 .image2-KosovaTrainingApp{
     content: url('../../../../assets/Home/KosovaTrainingApp/image.png');
     position: relative;
-    margin-top: -35%;
-    left: 10.5%;
-    width: 58%;
+    margin-top: -33%;
+    left: 28.4%;
+    width: 43%;
+    @media(max-width: 350px){
+        display: none;   
+     }
 }
 .TitleContainerKosova-TrainingApp{
     display: flex;
     flex-direction: column;
     color: #fff;
     width: 100%;
-    position: relative;
+    position: absolute;
     justify-content: center;
     align-items: center;
-    margin-right: 56%;
-    margin-top: 1%;
+    margin-right: 46%;
+    top: 129%;
     font-family: 'Poppins', sans-serif;
     h4{
         position: relative;
@@ -56,6 +75,33 @@ margin-top: -4%;
         font-size: 28px; 
         margin-bottom: -6%;
         font-weight: bold;
+        @media(max-width: 1349px){
+            font-size: 20px;
+
+        }
+        @media(max-width: 1055px){
+            width: 30%;
+        }
+        @media(max-width: 970px){
+            margin-bottom: -7%;
+        }
+        @media(max-width: 920px){
+            font-size: 16px;
+            width: 50%;
+            margin-left: 8%;
+        }
+        @media(max-width: 793px){
+            width: 50%;
+            margin-left: 16%;
+        }
+
+        @media(max-width: 720px){
+            margin-left: 13%;
+        }
+        @media(max-width: 510px){
+            font-size: 12px;
+        }
+       
     }
     p{
         font-size: 15px;
@@ -65,7 +111,39 @@ margin-top: -4%;
         margin-top: 5%;
         margin-bottom: -1%;
         margin-left: -4%;
+        @media(max-width: 1349px){
+            font-size: 13px;
+            width: 45%;
+            margin-left: 5%;
+        }
+        @media(max-width: 918px){
+            font-size: 12px;
+
+        }
+        @media(max-width: 610px){
+        font-size: 10px;
+        width: 54%;
+        margin-left: 9%;
+        }
+        @media(max-width: 476px){
+            font-size: 9px;
+        }
     }
+    @media(max-width: 810px){
+        margin-right: 54%;
+    }
+    @media(max-width: 720px){
+        top: 139%;
+    }  
+    @media(max-width: 477px){
+        top: 117%;
+     }
+     @media(max-width: 423px){
+        top: 95%;
+     }
+
+
+  
 }
 .Download-AppStore-PlayStore{
     position: relative;
@@ -74,9 +152,11 @@ margin-top: -4%;
     justify-content: space-between;
     align-items: center;
     width: 28%;
-    margin-top: 1%;
-    margin-left:-7%;
-    margin-bottom: -3%;
+    margin-left:-9%;
+    margin-bottom: -2%;
+    @media(max-width:753px){
+        display: none;
+    }
 }
 .Border-AppStore{
     display: flex;
@@ -84,11 +164,20 @@ margin-top: -4%;
     align-items: center;
     border: 1px solid transparent;
     position: relative;
-    left: -25%;
-    width: 33%;
+    left: -30%;
+    width: 30%;
     background-color: rgba(255,225,225,11%);
     border-radius: 4px;
     height: 40px;
+    cursor: pointer;
+    @media(max-width: 1349px){
+        left: -9%;
+        width: 40%;
+    }
+    @media(max-width: 1055px){
+        left: 4%;
+        width: 50%;
+    }
 
 }
 .Border-PlayStore{
@@ -98,8 +187,27 @@ align-items: center;
 border: 1px solid transparent;
 position: relative;
 left: 5%;
-width: 33%;
+width: 30%;
 background-color: rgba(255,225,225,11%);
 border-radius: 4px;
 height: 40px;
+cursor: pointer;
+@media(max-width: 1349px){
+    width: 40%;
+}
+@media(max-width: 1055px){
+    left: -5%;
+    width: 50%;
+}
+
+}
+.PlayStore {
+    @media(max-width: 810px){
+        width: 80%;
+    }
+}
+.AppStore{
+    @media(max-width: 810px){
+        width: 80%;
+    }
 }

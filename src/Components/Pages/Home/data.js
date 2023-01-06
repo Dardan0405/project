@@ -80,7 +80,45 @@ export const dataCards =[
         status:<FormattedMessage id="S" defaultMessage="(Student)"/>
 
 
-    }
+    },
+    {
+        icon:iconCard1,
+        Quote:Quote1,
+        Quote2:Quote2,
+        Description:<FormattedMessage id = "I studied" defaultMessage="I studied Graphic Design for 6 months at Kosova Training,I have
+        learned a lot and im not planning to stop I loved the course, teachers, lectures..."/>,
+        infoStudent:<FormattedMessage id="amina" defaultMessage="Amina Malik"/>,
+        status:<FormattedMessage id="ST" defaultMessage= "(Student)" />
+    },
+    {
+        icon:iconCard2,
+        Quote:Quote1,
+        Quote2:Quote2,
+        Description:<FormattedMessage id="Help" defaultMessage="Kosova Training helped me a lot! Not only does my resume looks impressive-
+        field with certificates also bring me closer to my career goal."/>,
+        infoStudent:<FormattedMessage id="Ashton" defaultMessage="Ashton Smith"/>,
+        status:<FormattedMessage id="S" defaultMessage="(Student)"/>
+    },
+    {
+        icon:iconCard1,
+        Quote:Quote1,
+        Quote2:Quote2,
+        Description:<FormattedMessage id = "I studied" defaultMessage="I studied Graphic Design for 6 months at Kosova Training,I have
+        learned a lot and im not planning to stop I loved the course, teachers, lectures..."/>,
+        infoStudent:<FormattedMessage id="amina" defaultMessage="Amina Malik"/>,
+        status:<FormattedMessage id="ST" defaultMessage= "(Student)" />
+    },
+    {
+        icon:iconCard2,
+        Quote:Quote1,
+        Quote2:Quote2,
+        Description:<FormattedMessage id="Help" defaultMessage="Kosova Training helped me a lot! Not only does my resume looks impressive-
+        field with certificates also bring me closer to my career goal."/>,
+        infoStudent:<FormattedMessage id="Ashton" defaultMessage="Ashton Smith"/>,
+        status:<FormattedMessage id="S" defaultMessage="(Student)"/>
+
+}
+
 
 
 ]

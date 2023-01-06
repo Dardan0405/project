@@ -5,15 +5,70 @@
     margin-top: -9%;
     font-family: 'Poppins', sans-serif;
     font-size: 17px;
-   
+   h4{
+    @media (max-width: 1002px){
+        display: flex;
+        position: relative;
+        left: -8%;
+        font-size: 22px;
+    }
+   }
     span{
         font-weight: bold;
     }
 }
-.react-tabs__tab-list{
+.Border-Recomanded{
+    width: max(40px,2vw);
+    height: max(40px,2vw);
+    border-radius: 50%;
+    border: 0;
+    background-color: rgb(112,112,112,40%);
+    &:hover {
+        background-color: var(--main-color);
+    }
+    @media(max-width: 1288px){
+        display: none;
+    }
+    
+   
+}
+.Play-Rec{
+    width: 20%;
+}
+.Border-left{
+    position: relative;
+    left: -4%;
+   
+}
+.Tabs-Containers{
     display: flex;
+    flex-wrap: wrap;
+}
+.Border-Right{
+    position: relative;
+    right: -3.5%;
+}
+.Arrow-Recomanded{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+   position: relative;
+   color: #fff;
+   border: 0;
+   margin-left: 12%;
+   background-color: rgb(112,112,112,0%);
+   margin-top: 14.5%;
+   cursor: pointer;
+}
+.react-tabs__tab-list{
+
     align-items: center;
     justify-content: center;
+    display: flex;
+    padding: 2% 0%;
+    flex-wrap: wrap;
+    width: 100%;
 
     
 }
@@ -22,12 +77,20 @@
     margin: max(13px,0.5vw);
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    @media(max-width: 1349px){
+        padding: max(30px,1.5vw) max(5px,0.5vw);
+    }
+    @media(max-width: 1180px){
+        padding: max(3px,0.5vw  ) max(9px,0.5vw );
+        margin: max(15px,0.5vw);
+    }
   
 
 }
 .react-tabs__tab--selected{
     
-    color: rgba(75,60,153,100%);
+    color: rgba(var(--main-rgb),100);
 }
 .react-tabs__tab-panel{
     display: flex;
@@ -40,6 +103,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;    
+    @media(max-width: 1000px){
+        width: max(38%,2vw);
+    }
+    @media(max-width: 726px){
+        width: max(85%,2vw);
+    }
 }
 .inner-cotentRec{
     border: 1px solid rgba(71, 86, 119, 20%);
@@ -83,12 +152,24 @@
     justify-content: center;
     align-items: center;
     padding: 5% 2%;
+
     
     
     p{
         font-size: 13px;
         margin-right: 34%;
         color: #7d8597;
+        @media(max-width: 1349px){
+            font-size: 13px;
+            margin-right: 20%;
+        }
+        @media(max-width: 1000px){
+            margin-right: 16%;
+        }
+        @media(max-width: 726px){
+            margin-right: 14%;
+        }
+
     }
 }
 .Circle-Recomanded{
@@ -103,6 +184,9 @@
         margin-left: 18%;
         width:100%;
         color: rgb(0, 181, 145, 100%);
+        @media(max-width: 1299px){
+            margin-left: 10%;
+        }
 
     }
 }
@@ -114,13 +198,39 @@
     width:101.3%;
     font-family: 'Poppins', sans-serif;
     margin-bottom: 1%;
+    
 
     h4{
         font-size: 15px;
         color: #103b3e;
         text-align: inherit;
         font-weight: bold   ;
-        
+        @media(max-width: 1349px){
+            font-size: 14px;
+        }
+        @media(max-width: 1298px){
+            font-size: 13px;
+        }
+        @media(max-width: 1143px){
+            font-size: 12px;
+            font-weight: bold;
+        }
+        @media(max-width: 1000px){
+            font-size: 13px;
+
+        }
+    }
+    @media(max-width: 1349px){
+        width: 100%;
+    }
+    @media(max-width: 1230px){
+        width: 101.3%;
+        left: 10%;
+        position: relative;
+    }
+    @media(max-width: 726px){
+        width: max(105.3%,2vw);
+        left: 5%;
     }
 }
 
@@ -136,16 +246,36 @@
          display: flex;
          justify-content: center;
          align-items: center;
+         @media(max-width: 1159px){
+            font-size: 12px;
+         }
     }
     .Students-REC{
         margin-left: 21%;
         font-size: 12px;
         color: #7d8597;
+        @media(max-width: 1349px){
+            margin-left: 0%;
+            font-size: 12px;
+
+        }
+        @media(max-width: 1996px){
+            font-size: 11px;
+            margin-left: -2%;
+        }
+        @media(max-width: 726px){
+            margin-left: 1%;
+        }
+    }
+}
+.Icon-Rec{
+    @media(max-width: 1159px){
+        width: max(29%,2vw);
     }
 }
 .Enrollnow-Rec{
     display: flex;
-    border: 1px solid rgba(75,60,153,50%);
+    border: 1px solid rgba(var(--main-rgb),0.5);
     width: max(30%,2vw);
     text-align: center;
     height: 36px;
@@ -164,10 +294,25 @@
         justify-content: center;
         align-items: center;
         padding: 1% 19%;
-        color: #4b3c99;
+        color: var(--main-color);
         font-size: 12px;
         font-weight: bold;
+        @media(max-width: 1301px){
+            padding: 1% 11%;
+        }
+        @media(max-width: 1000px){
+            padding: 1% 7%;
+        }
+        @media(max-width: 726px){
+            padding: 1% 6%;
+        }
     }
+    @media(max-width: 1349px){
+        width: max(35%,2vw);
+        
+    }
+    
+    
 }
 .rec-swipable{
     align-items: stretch;
@@ -215,15 +360,15 @@
     width: 100%;
     height: 100%;
     display: none;
-    background: rgba(75,60,153,86%);
+    background: rgba(var(--main-rgb),86%);
     .Play-Rec{
         margin-top: 26.5%;
-        margin-left: 40%;
+        margin-left: 38%;
     }
     p{
-        font-size: 16px;
-        margin-left: 36%;
-        margin-top: 4%;
+        font-size: 14px;
+        margin-left: 32%;
+        margin-top: 6%;
     }
     
 }
@@ -234,11 +379,22 @@
     display: flex; 
     justify-content: center;
     align-items: center;
-    border: 1px solid rgba(75,60,153,50%);
-    color: #4b3c99;
+    border: 1px solid rgba(var(--main-rgb),0.5);
+    color: var(--main-color);
     margin: 2% 44%;
     width: max(12%,2vw);
     border-radius: 30px;
     position: relative;
     height: 40px;
+    a{
+        color: var(--main-color);
+    }
+    @media(max-width: 938px){
+        width: max(25%,2vw);
+        margin: 2% 37%;
+        font-size: 14px;
+    }
+    @media(max-width: 372px){
+        width: max(33%,2vw);
+    }
 }
