@@ -15,7 +15,8 @@ import { translate } from './translation/translate';
 import{useSelector} from 'react-redux'
 
 const Home = lazy  (() => import ('./Pages/Home/Home'));
-const Design = lazy (() => import ('./Pages/Design/Design'))
+const Design = lazy (() => import ('./Pages/Design/Design'));
+const Login = lazy (() => import ('./Pages/Login/Login'));
 
 function App () {
   const language = useSelector((state) => state.language.language);
@@ -36,8 +37,10 @@ function App () {
 
           <Routes>
             <Route exact path='/' element = {<Home />}/>
-            <Route path='/' element = {<Navigate to ='/'/>}/>
+            
             <Route path="/Design"  element ={<Design/>}/>
+            <Route path="/Login" element ={<Login/>}/>
+            <Route path='*' element = {<Navigate to ="/" />}/>
           </Routes>
         </IntlProvider>
 

@@ -1,0 +1,44 @@
+.Video-Container{
+    
+    background:  
+    url('../../../../assets/Design/video-background.png');
+    border-radius:35px;
+    width: max(100%,2vw );
+    height: 82vh;
+.Desciption-Video{
+    display: flex;
+    flex-direction: row;
+    width: max(100%);
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+    .Title-Video{
+        position: relative;
+        width: max(73%,2vw);
+        display: flex;
+        justify-content: flex-start;
+        margin: max(3px,0% )5% max(0px,1% );
+        h4{
+            font-size: 18px;
+            color: #1c1540;
+        }
+        
+    }
+    .icons-on-top-Video{
+        position: relative;
+        display: flex;
+        width: max(41%,2vw);
+        justify-content: flex-end;
+        .Burger-Menu-Video{
+            width: 7%;
+            position: relative;
+            margin-right: 4%;
+        }
+        .Screen{
+            width: 7%;
+            margin-right: 12%;
+        }
+    }
+}
+
+}

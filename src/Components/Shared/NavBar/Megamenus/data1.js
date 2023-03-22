@@ -24,6 +24,7 @@ import Instructors from '../../../../assets/Nav/Categories/Aboutus/Instructors.s
 import Partner from '../../../../assets/Nav/Categories/Aboutus/Partner.svg'
 import School from '../../../../assets/Nav/Categories/Aboutus/School.svg'
 import Sponsor from '../../../../assets/Nav/Categories/Aboutus/Sponsor.svg'
+import { Link } from 'react-router-dom'
 
 
 export const Cat=[
@@ -32,68 +33,68 @@ export const Cat=[
 items:[
         {
             to :'/',
-            title:<FormattedMessage id='Dev' defaultMessage='Development'/>,
+            title:<Link to='/Dev'><FormattedMessage id='Design' defaultMessage='Development'/></Link>,
             icon:<IoIosArrowForward/>,
         },
         {
             to :'/',
-            title:<FormattedMessage id='Busines' defaultMessage='Bussines'/>,
+            title:<Link to='/Busines'><FormattedMessage id='Bussiness' defaultMessage='Bussines'/></Link>,
             icon: <IoIosArrowForward/>
         },
         
         {
             to :'/',
-            title:<FormattedMessage id='Finance' defaultMessage='Finance & Accounting'/>,
+            title:<Link to='/Finance'> <FormattedMessage id='Finance' defaultMessage='Finance & Accounting'/> </Link>,
             icon:<IoIosArrowForward/>
         },
         {
             to :'/',
-            title:<FormattedMessage id='IT' defaultMessage='IT & Software'/>,
+            title:<Link to='IT & Software'><FormattedMessage id='IT' defaultMessage='IT & Software'/> </Link>,
             icon:<IoIosArrowForward/>
         },
         {
             to :'/',
-            title:<FormattedMessage id='Office' defaultMessage='Office Prductivity'/>,
+            title: <Link to='/Office Prductivity'><FormattedMessage id='Office' defaultMessage='Office Prductivity'/></Link>,
             icon:<IoIosArrowForward/>
         },
         {
             to :'/',
-            title:<FormattedMessage id='Prsonal' defaultMessage='Personal Development'/>,
+            title:<Link to='/Personal Development'><FormattedMessage id='Prsonal' defaultMessage='Personal Development'/></Link>,
             icon:<IoIosArrowForward/>
         },
         {
             to :'/',
-            title:<FormattedMessage id='Des' defaultMessage='Design'/>,
+            title:<Link to='/Design'><FormattedMessage id='Design' defaultMessage='Design'/></Link>,
             icon:<IoIosArrowForward/>
         },
         {
             to :'/',
-            title:<FormattedMessage id='Market' defaultMessage='Marketing'/>,
+            title:<Link to='/Marketing'><FormattedMessage id='Market' defaultMessage='Marketing'/></Link>,
             icon:<IoIosArrowForward/>
         },
         {
             to :'/',
-            title:<FormattedMessage id='Life' defaultMessage='Lifestyle'/>,
+            title:<Link to='/Lifestyle'><FormattedMessage id='Life' defaultMessage='Lifestyle'/></Link>,
             icon:<IoIosArrowForward/>
         },
         {
             to :'/',
-            title:<FormattedMessage id='Photo' defaultMessage='Photography & Video'/>,
+            title: <Link to='/Photography & Video'><FormattedMessage id='Photo' defaultMessage='Photography & Video'/></Link>,
             icon:<IoIosArrowForward/>
         },
         {
             to :'/',
-            title:<FormattedMessage id='Health' defaultMessage='Health & Fitess'/>,
+            title:<Link to='/Health & Fitness'><FormattedMessage id='Health' defaultMessage='Health & Fitness'/></Link>,
             icon: <IoIosArrowForward/>
            },
            {
             to :'/',
-            title:<FormattedMessage id='Music' defaultMessage='Music'/>,
+            title: <Link to='/Music'><FormattedMessage id='Music' defaultMessage='Music'/></Link>,
             icon: <IoIosArrowForward/>
            },
            {
             to :'/',
-             title:<FormattedMessage id='Teaching' defaultMessage='Teaching  & Academics'/>,
+             title:<Link to='/Teaching  & Academics'><FormattedMessage id='Teaching' defaultMessage='Teaching  & Academics'/></Link>,
              icon: <IoIosArrowForward/>
             },
     ],
@@ -101,52 +102,52 @@ items:[
     item:[
         { 
             to :'/',
-            title:<FormattedMessage id='Web' defaultMessage='Web Development'/>,
+            title:<Link to='/Web Development'><FormattedMessage id='Web' defaultMessage='Web Development'/></Link>,
             icon: <IoIosArrowForward/>
         },
         {
             to :'/',
-            title:<FormattedMessage id='Data' defaultMessage='Data Science'/>,
+            title:<Link to='/Data Science'><FormattedMessage id='Data' defaultMessage='Data Science'/></Link>,
             icon: <IoIosArrowForward/>
         },
         {
             to :'/',
-            title:<FormattedMessage id='Mobile' defaultMessage='Mobile Development'/>,
+            title:<Link to='/Mobile Development'><FormattedMessage id='Mobile' defaultMessage='Mobile Development'/></Link>,
             icon: <IoIosArrowForward/>
         },
         {
             to :'/',
-            title:<FormattedMessage id='Programing' defaultMessage='Programing Languages'/>,
+            title:<Link to='/Programing Languages'><FormattedMessage id='Programing' defaultMessage='Programing Languages'/></Link>,
             icon: <IoIosArrowForward/>
         },
         {
             to :'/',
-            title:<FormattedMessage id='Game' defaultMessage='Game Devlopment'/>,
+            title:<Link to='/Game Devlopment'><FormattedMessage id='Game' defaultMessage='Game Devlopment'/></Link>,
             icon: <IoIosArrowForward/>
         },
         {
             to :'/',
-            title:<FormattedMessage id='DB' defaultMessage='Database Design'/>,
+            title:<Link to='/Database Design'><FormattedMessage id='DB' defaultMessage='Database Design'/></Link>,
             icon: <IoIosArrowForward/>
         },
         {
             to :'/',
-            title:<FormattedMessage id='Software' defaultMessage='Software Testing'/>,
+            title:<Link to='/Software Testing'><FormattedMessage id='Software' defaultMessage='Software Testing'/></Link>,
             icon: <IoIosArrowForward/>
         },
         {
             to :'/',
-            title:<FormattedMessage id='Soft' defaultMessage='Software Engineering'/>,
+            title:<Link to='/Software Engineering'><FormattedMessage id='Soft' defaultMessage='Software Engineering'/></Link>,
             icon: <IoIosArrowForward/>
         },
         {
             to :'/',
-            title:<FormattedMessage id='Tools' defaultMessage='Software Development Tools'/>,
+            title:<Link to='/Software Development Tools'><FormattedMessage id='Tools' defaultMessage='Software Development Tools'/></Link>,
             icon: <IoIosArrowForward/>
         },
         {
             to :'/',
-            title:<FormattedMessage id='No' defaultMessage='No-code Development'/>,
+            title:<Link to='/No-code Development'><FormattedMessage id='No' defaultMessage='No-code Development'/></Link>,
             icon: <IoIosArrowForward/>
         },
     ]
