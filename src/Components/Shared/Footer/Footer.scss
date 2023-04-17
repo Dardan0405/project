@@ -3,6 +3,12 @@
     margin-top: -18%;
 
 }
+.Login-page .Footer{
+    margin-top: 4%;
+    @media(max-width: 1233px){
+        margin-top: 3%;
+    }
+}
 .Footer{
     background: url('../../../assets/Shared/Footer/background.jpg');
     background-repeat: no-repeat;

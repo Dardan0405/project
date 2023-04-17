@@ -17,6 +17,7 @@ import{useSelector} from 'react-redux'
 const Home = lazy  (() => import ('./Pages/Home/Home'));
 const Design = lazy (() => import ('./Pages/Design/Design'));
 const Login = lazy (() => import ('./Pages/Login/Login'));
+const Signiin = lazy (()=> import('./Pages/Signin/Signin'));
 
 function App () {
   const language = useSelector((state) => state.language.language);
@@ -40,6 +41,7 @@ function App () {
             
             <Route path="/Design"  element ={<Design/>}/>
             <Route path="/Login" element ={<Login/>}/>
+            <Route path="/Signin" element ={<Signiin/>}/>
             <Route path='*' element = {<Navigate to ="/" />}/>
           </Routes>
         </IntlProvider>

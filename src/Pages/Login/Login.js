@@ -5,13 +5,14 @@ import LoginAccount from "../../Components/Pages/Login/LoginAccount";
 import LoginCard from "../../Components/Pages/Login/LoginCard";
 
 
+
 const LoginPage =() =>{
     return(
         <div className="Login-page">
         <Navbar/>
         <LoginAccount/>
         <LoginCard/>
-        
+        <Footer/>
         </div>
     )
 }

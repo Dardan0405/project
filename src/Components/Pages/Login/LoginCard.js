@@ -3,7 +3,7 @@ import { FormattedMessage } from "react-intl";
 import "./style/LoginCard.scss"
 import{TfiEmail} from 'react-icons/tfi'
 import { Form, Link } from "react-router-dom";
-import{CgLockUnlock} from "react-icons/cg"
+import{FiLock} from "react-icons/fi"
 import {AiOutlineEyeInvisible} from "react-icons/ai"
 import {AiOutlineEye} from "react-icons/ai"
 import  Facebook from "../../../assets/Login/Facebook.svg"
@@ -27,9 +27,9 @@ const LoginCard =() =>{
     const [hidden,setHidden] = useState(true);
    
 return(
-    <div className="Login-Card">
+    <form className="Login-Card">
         <div className="Description-Login">
-            <h4><FormattedMessage id="Log in Account" defaultMessage="Log In Your Account!"/></h4>
+            <h4><FormattedMessage id="Log in Account" defaultMessage="Log  In   to  Your  Account !"/></h4>
             <p><FormattedMessage id="Welcome back" defaultMessage="Welcome back to your Kosova Training account"/></p>
         </div>
         <div className="Input-form-Login">
@@ -50,7 +50,7 @@ return(
           </FormattedMessage>       
           </div>
           <div className="input-container-Login">
-            <span><CgLockUnlock/></span>
+            <span><FiLock/></span>
             <FormattedMessage id="Pass" defaultMessage="Password">
                 {(msg) =>(
                     <input 
@@ -70,7 +70,7 @@ return(
     </div>
     <div  className="Forgotpassword">
         <Link to="/Login" >
-            <FormattedMessage id="Forgot" defaultMessage="Forgot password?"/>
+            <FormattedMessage id="Forgot" defaultMessage="Forgot password ?"/>
         </Link>
     </div>
     <div className="Remeberme-Login">
@@ -83,7 +83,7 @@ return(
         <button><FormattedMessage id="Login" defaultMessage="Log in"/></button>
     </div>
     <div className="Registe-login">
-        <p><FormattedMessage id="Don't" defaultMessage="Don't have an account?"/><Link to="/Signiin">
+        <p><FormattedMessage id="Don't" defaultMessage="Don't have an account?"/><Link to="/Signin">
             <FormattedMessage id="Register" defaultMessage="Register"/>
         </Link></p>
     </div>
@@ -92,6 +92,8 @@ return(
         <div className="IconLogin SocialmediaLogin"style={{content:`url(${Twitter})`}} ></div>
         <div className="IconLogin SocialmediaLogin"style={{content:`url(${Google})`}}></div>
     </div>
+
+    <div className="Rightside-Login">
     <div className="Right-sidecontainerLogin">
         <div className="Background-image-Login">
            
@@ -151,13 +153,14 @@ return(
             </div>
         
         </div>
-        
+        </div>
         
     
     </div>
     </div>
     
-    </div>
+    </form>
+
 )
 }
 export default LoginCard

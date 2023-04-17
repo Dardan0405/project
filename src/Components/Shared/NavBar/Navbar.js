@@ -128,7 +128,7 @@ const Navbar = (props) =>{
                 <Link to='/Login' className="login">
                     <FormattedMessage id='log-in' defaultMessage='Log In' />
                 </Link>
-                <Link to='/' className="signup">
+                <Link to='/Signin' className="signup">
                     <FormattedMessage id='sign-up' defaultMessage='Sign in' />
                 </Link>
             </div>
