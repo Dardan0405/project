@@ -40,5 +40,17 @@
         }
     }
 }
+.Video-AllContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    .React-Player{
+        width: 96%;
+        padding: max(0px,0vw)1% max(0px,0vw);
+        height: 68vh;
+    }
+}
 
 }

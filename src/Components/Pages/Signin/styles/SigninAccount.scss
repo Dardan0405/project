@@ -10,6 +10,8 @@
     padding: max(66px,1.5%)7.3% max(47px,1%);
     position: relative;
     margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
 
 .Sigin-Card{
     display: flex;
@@ -20,7 +22,7 @@
     width: 53%;
     flex-direction: column;
     z-index: 1;
-   padding: max(25px,1vw)max(143px,7vw);
+   padding: max(25px,1vw)max(62px,5vw);
     border-radius: 13px;
     .Title-Sigin{
         position: relative;
@@ -32,6 +34,7 @@
         width: 100%;
         h4{
             font-size: 25px;
+            font-family: 'Poppins';
             font-weight: 900;
             text-align: center;
             padding:max(1px,1vw)max(0px,0vw) ;
@@ -41,6 +44,7 @@
         }
         p{
             font-size: 17px;
+            font-family: 'Poppins';
             display: flex;
             width: 100%;
             justify-content: center;
@@ -82,6 +86,7 @@
                 justify-content: center;
                 align-items: center;
                 font-size: 14px;
+                font-family: 'Poppins';
                 font-family: 'Poppins', sans-serif;
             }
         }
@@ -111,6 +116,7 @@
                 justify-content: center;
                 align-items: center;
                 font-size: 14px;
+                font-family: 'Poppins';
                 font-family: 'Poppins', sans-serif;
 
             }
@@ -134,6 +140,7 @@
     justify-content: center;
     align-items: flex-start;
     font-size: 14px;
+    font-family: 'Poppins';
     margin-left: -34px;
     letter-spacing: 1px;
     label{
@@ -191,39 +198,46 @@
 }
 .BackgroundImage-SIgnin{
     position: absolute;
-    top: 25%;
+    top: 35%;
     width: 35%;
-    left: 54%;
+    left: 57%;
     display: flex;
     justify-content: flex-start;
-    padding-top: 13%;
+    padding-top: 8%;
     .Image-BackgroundStudent-Sigin{
         background-color: rgba(245, 245, 252, 0.5);
         position: absolute;
         display: flex;
         flex-direction: column-reverse;
-        align-items: flex
-        -start;
+        align-items: flex-start;
         justify-content: flex-start;
-
         border-radius: 50%;
-        width: 64%;
-        top: 6.5%;
-        height: min(107vh,20vw);
-        left: 26%;
+        width: 68%;
+        top: -15%;
+        height: min(97vh,19vw);
+        left: 14%;
         .ImageStudentSignin{
            content: url('../../../../assets/Shared/KosovaBusiness/Students.png');
            transform: scale(0.75);
             position: absolute;
             z-index: 1;
-            top: -46%;
+            top: -52%;
+            right: -52%;
+        @media(max-width: 1349px){
+            top: -67%;
             right: -58%;
-    
+        }    
+        }
+        @media(max-width: 1349px){
+            width: 74%;
+            top: 6.5%;
+            height: min(122vh,22vw);
+            left: 26%;
         }
     }
     .Goals-Cards-Signin{
         position: relative;
-        width: 40%;
+        width: 42%;
         z-index: 3;
         background-color: rgba(255, 255, 255, 0.3);
         backdrop-filter: blur(12px);
@@ -231,6 +245,7 @@
         flex-direction: column;
         border-radius: 17px;
         padding:max(16px,0.5vw) max(1px,1vw);
+        margin-left: -10%;
         .Logo-Name-Signin{
            display: flex;
            flex-direction: row;
@@ -243,11 +258,17 @@
            }
            p{
             font-size: 12px;
+            font-family: 'Poppins';
             display: flex;
             align-items: center;
             font-weight: 900;
             color: #fff;
            }
+           
+        }
+        @media(max-width: 1349px){
+            width: 51%;
+            margin-left: -9%;
         }
     }
     .Title-Goals-Signin{
@@ -257,12 +278,14 @@
         text-transform: uppercase;
         color: #fff;
         font-size: 18px;
+        font-family: 'Poppins';
         margin-bottom: 6%;
     }
     .Goals-Percent{
         display: flex;
         justify-content: space-between;
         color: #fff;
+        font-family: 'Poppins';
         font-size: 11px;
         font-weight: 900;
         margin-bottom: 11%;
@@ -273,7 +296,218 @@
         border-radius: 40px;
         padding: max(0px,0.32vw) max(0px,0vw);
     }
+    @media(max-width: 1349px){
+        padding-top: 11%;
+    }
 }
 
+.Right-Side{
+    display: flex;
+    justify-content: flex-start;
+    margin-right: -8.5%;
+    margin-top: -0.5%;
+    width: 100%;
+    align-items: flex-end;
+    flex-direction: column;
+    .Cards-Illustrator{
+        border: transparent;
+        width: 20%;
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 15px 0px 0px 15px;
+        padding: max(0px,0vw)0% max(1.5px,0.5vw);
+        height: fit-content;
+        .Numbers-Illustrator{
+            display: flex;
+            flex-direction: column-reverse;
+            font-size: 16px;
+            font-family: 'Poppins';
+            font-weight: 500;
+            padding: max(22px,0.5%)8% max(6px,0.5%);
+            p{
+                margin: max(0.1px,0.01vw)0% max(1px,0.5vw);
+               
+            }
+            &  :hover{
+                color: #fff;
+                font-weight: 900;
+            }
+        }
+        .Photo-IllustratorContent{
+            position: relative;
+            display: flex;
+            align-items: start;
+            justify-content: end;
+            margin-top: -82%;
+            .Images-Illustrator{
+                content: url("../../../../assets/Signin/Vector.png");
+                width: max(41%,2vw);
+            }
+
+        }
+        .Title-Illustrator{
+            position: relative;
+            width: 91%;
+            color: #fff;
+            font-weight: 900;
+            margin-top: -22%;
+            padding-left: 10px;
+            font-size: 17px;
+            font-family: 'Poppins';
+            h5{
+                font-weight: 900;
+            }
+        }
+        .Paragraph-ContentIllustrator{
+            position: relative;
+            display: flex;
+            font-size: 10.8px;
+            font-family: 'Poppins';
+            width: 100%;
+            text-align: justify;
+            padding-top: 19px;
+            color: rgba(255, 255, 255, 0.3);
+            padding-left: 12px;
+        }
+       .People-EnrolledIllustrator{
+        position: relative;
+        font-size: 15.2px;
+        font-family: 'Poppins';
+        padding-top: 16px;
+        display: flex;
+        color: #fff;
+        justify-content: flex-end;
+        padding-right: 6px;
+        h5{
+            font-weight: 900;
+        }
+       }
+       .Persons-EnrolledIllustrator{
+        position: relative;
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 10px;
+        padding-top: 11px;
+        .Persons-Illstrator{
+            display: flex;
+            position: relative;
+            transform: scale(0.8);
+        }
+        p{
+            display: flex;
+            font-size: 12px;
+            font-family: 'Poppins';
+            justify-content: center;
+            color: rgba(255, 255, 255, 0.3);
+            align-items: center;
+        }
+       }
+       .Enroll-TodayIllustrator{
+        position: relative;
+        font-size: 14px;
+        font-family: 'Poppins';
+        justify-content: start;
+        padding-top: 9px;
+        color: #fff;
+        padding-left: 17px;
+        h5{
+            font-weight: 900;
+        }
+
+       }
+    }
+    .Card-botom-Illustrator{
+        position: relative;
+    
+        width: 29%;
+        margin: max(1.9%)5% max(0%,0vw);
+        border-radius: 17px;
+        height: fit-content;
+        z-index: 1;
+        background-color: rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(7px);
+        .Icons-Container{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: max(11px,0.1vw)8% max(8px,0vw);
+            
+            .LinksIllustrator{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: baseline;
+                margin: max(15px,0.5vw)0% max(5px,0.1vw);
+                .Icons-IllustratorContent{
+                    display: flex;
+                    width: 22%;
+                    position: relative;
+                    border-radius: 50%;
+                    align-items: center;
+                    background-color: #fff;
+                    justify-content: center;
+                    height: 36px;
+                    .AllIcons-Illustrator{
+                        transform: scale(0.82);
+                    }
+                }
+                .Description-AllIconsIllustrator{
+                    display: flex;
+                    position: relative;
+                    font-size: 12px;
+                    width: 61%;
+                    font-family: 'Poppins';
+                    align-items: center;
+                    justify-content: space-around;
+                    p{
+                        position: relative;
+                        a{
+                            color: rgba(255, 255, 255, 0.5);
+                        }
+                    }
+                }
+                .Arrays-AllIconsIllustrator{
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 22%;
+                    margin-left: 8%;
+                    border-radius: 11px;
+                    background-color: rgba(255, 255, 255, 0.3);
+                    height: 34px;
+                    .Arrays-Inside-Illustrator{
+                        transform: scale(0.85);
+                    }
+
+                }
+            }
+        }
+    }
+}
+.Logo-SiiginSite{
+    position: absolute;
+    display: flex;
+    width: 30%;
+    z-index: 1;
+    margin-top: 37.5%;
+    margin-left: 61.5%;
+    .Logo-Container-Signin{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        .Logos-Signin{
+            transform: scale(0.8);
+        }
+    }
+    .Footer{
+        position: absolute;
+        width: max(100%,99.4vw);
+        margin-top: 68%;
+        margin-left: -230%;
+       }
+}
 
 }

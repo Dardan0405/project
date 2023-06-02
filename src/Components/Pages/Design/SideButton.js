@@ -4,8 +4,7 @@ import { FormattedMessage } from "react-intl";
 import {IoIosArrowUp} from 'react-icons/io'
 import Video from "./Video.js";
 import { IoIosArrowDown } from "react-icons/io";
-import {BsPlayCircle} from 'react-icons/bs'
-;
+import {BsPlayCircle} from 'react-icons/bs';
 import {BiBookOpen} from "react-icons/bi";
 import './styles/SideButton.scss'
 
@@ -13,18 +12,20 @@ import './styles/SideButton.scss'
 const Sidebutton =() =>{
     const [click,setClick] = useState (false);
     const [inclick,setInClick] = useState(true);
-    const [clickVideo,setclickVideo] = useState(false);
+    const [clickVideo,setclickVideo] = useState(true);
+  
     return(
         <div className="Button-Side">
             <div className="Desciption-Button">
                 
-            <button className="Module1 module"  onClick={() => setClick(!click)}><h4 className="Module1-Button"><FormattedMessage id="Modul1" defaultMessage='Module 1'/></h4>
+            <button className="Module1 module"   onClick={() => setClick(!click)}><h4 className="Module1-Button"><FormattedMessage id="Modul1" 
+            defaultMessage='Module 1'/></h4>
             <div className="Icon-Side1">
             {click? <IoIosArrowDown/>: <IoIosArrowUp />}
             </div>
             </button>
             {click &&  <div className="Inner-button">
-                <Link  to='/Design' className="Link-Inner1" onClick={() => setclickVideo(!clickVideo)}>
+                <Link  to='/Design' className="Link-Inner1" onClick={()=> setclickVideo(!clickVideo)}>
                     <div className="Video-WelcomeIcons">
                         <BsPlayCircle/>
                     </div>
@@ -36,7 +37,7 @@ const Sidebutton =() =>{
                             <FormattedMessage id="Welcome-Video" defaultMessage='Welcome-Video'/>
                         </p>
                     </div>
-                    {clickVideo && <div className="Video-sidebar">
+                    {  <div className="Video-sidebar" onClick={(e) => e.preventDefault()} >
                     <Video/>
                         </div>}
                     
@@ -107,7 +108,8 @@ const Sidebutton =() =>{
             </button>
             
             {inclick &&  <div className="Inner-button">
-               
+                
+            
                 </div>}
 
         </div>
@@ -119,6 +121,7 @@ const Sidebutton =() =>{
             </button>
             
             {inclick &&  <div className="Inner-button">
+                
                 </div>}
 
         </div>
@@ -152,6 +155,7 @@ const Sidebutton =() =>{
             </button>
             
             {inclick &&  <div className="Inner-button">
+               
                 </div>}
 
         </div>

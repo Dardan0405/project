@@ -21,7 +21,7 @@
         
         }
         .Icon-Top{
-           filter: brightness(3);
+           filter: brightness(5);
         }
         .Ttile-Container-Top{
             color: var(--main-color);
@@ -51,6 +51,7 @@
     justify-content: center;
     position: relative;
     margin-top: 8%;
+    z-index: 1;
   
     .Icon-Top{
         position: relative;

@@ -64,7 +64,7 @@ items:[
         },
         {
             to :'/',
-            title:<Link to='/Design'><FormattedMessage id='Design' defaultMessage='Design'/></Link>,
+            title:<Link to='/IntrotoUx'><FormattedMessage id='Design' defaultMessage='Design'/></Link>,
             icon:<IoIosArrowForward/>
         },
         {
