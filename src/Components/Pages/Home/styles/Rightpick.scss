@@ -107,16 +107,24 @@
     width: 94%;
     justify-content: center;
     height: 48px;
-    background: var(--main-color);
+    background-color: #ffff;
+    border: 1px solid (var(--main-color));
     align-items: center;
+    color: var(--main-color);
     transition: 0.3s ease;
     -webkit-transition: 0.3s ease;
     &:hover{
          transform: translateX(15px);
          -webkit-transform: translateX(15px);
+         background-color: var(--main-color);
+         color: #ffff;
     }
    a{
-    color: #ffff;
+    color: var(--main-color);
+    &:hover {
+        color: #ffff;
+    }
+    
    }
 @media(max-width: 800px){
     width: 76%;
@@ -141,8 +149,14 @@
     width: 94%;
     transition: 0.3s ease;
     -webkit-transition: 0.3s ease;
+    &:hover{
+        background-color: var(--main-color);
+    }
     a{
         color: var(--main-color);
+        &:hover{
+            color: #ffff;
+        }
     }
     &:hover{
          transform: translateX(15px);
@@ -193,7 +207,10 @@
             margin-top: 25%;
         }
     }
-   
+&:hover{
+    -webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}   
 }
 .Content-Price{
     margin-top: 15%;

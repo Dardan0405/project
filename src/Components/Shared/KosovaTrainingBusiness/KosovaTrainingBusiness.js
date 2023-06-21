@@ -19,7 +19,7 @@ return(
         </h4>
         <p>
             <FormattedMessage id="unlimited" defaultMessage='Get ulimited access to 15,000+ of KosovaTraining`s top courses
-            for your team.Learn and imporve skills across business, tech, design, and more.'/>
+            for your team. Learn and imporve skills across business, tech, design, and more.'/>
         </p>
         <div className="Link-KosovaBusiness">
         <Link>Get started</Link>

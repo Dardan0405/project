@@ -9,7 +9,7 @@ const JoinTeam =() =>{
     return(
         <div className="JoinTeam-Main">
             <div className="JoinTeam-Ttiles">
-                <h4><FormattedMessage id="join" defaultMessage="Join our Team,Become"/>
+                <h4><FormattedMessage id="join" defaultMessage="Join our Team, Become"/>
                 <span> a Mentor</span></h4>
                 <div className="img-JoinTeam"style={{content:`url(${twoline})`}} ></div>
                 

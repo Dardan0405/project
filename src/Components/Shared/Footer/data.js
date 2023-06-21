@@ -1,21 +1,31 @@
 import { FormattedMessage } from "react-intl"
-import Facebook from '../../../assets/Shared/Footer/Facebook.svg'
-import linkedin from '../../../assets/Shared/Footer/linkedin.svg'
-import Play from '../../../assets/Shared/Footer/Play.svg'
-import Twitter from '../../../assets/Shared/Footer/Twitter.svg'
+
+
+import {FaFacebookF,FaLinkedinIn} from 'react-icons/fa'
+import {AiFillInstagram} from 'react-icons/ai'
+import {BsTwitter} from 'react-icons/bs'
+
+
 
 export const Footericons =[
     {
-        icon:Facebook,
+        icon:<FaFacebookF/>,
+        link:'/'
     },
     {
-        icon:Twitter,
+        icon: <BsTwitter/>,
+        link:'/'
+        
     },
     {
-        icon:linkedin,
+        icon:<FaLinkedinIn/>,
+        link:'/'
     },
     {
-        icon:Play,
+        icon:<AiFillInstagram />,
+        link:'https://www.instagram.com/kosovatraining/'
+    
+        
     }
 ]
 

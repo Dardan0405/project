@@ -230,10 +230,10 @@ margin-bottom: -2%;
 
 .Boy{
     position: relative;
-    width: max(50%,2vw);
+    width: max(35%,2vw);
     float: right;
-    margin-right: -34%;
-    margin-top: -33%;
+    margin-right: -15%;
+    margin-top: -34%;
     @media(max-width: 1349px){
         width: max(51%,2vw);
         margin-top: -32%;
@@ -243,8 +243,8 @@ margin-bottom: -2%;
     }
 }
 .Boy-School{
-    content: url('../../../../assets/Home/WhyKosovaTraining/BoySchool.svg');
-    width: max(67%,2vw);
+    content: url('../../../../assets/Home/WhyKosovaTraining/student.png');
+    width: max(100%,2vw);
     @media(max-width:1349px){
         margin-top: -13%;
         display: flex;

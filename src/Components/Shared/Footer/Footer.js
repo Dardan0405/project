@@ -65,7 +65,12 @@ const Footer =() =>{
                     <div className="Icons-Foooter">
                         {Footericons.map((props)=>{
                         return(
-                            <div className="Icons-SocialMedia"style={{content: `url(${props.icon})`}} ></div>
+                            
+                         <div className="Icons-SocialMedia" >
+                            <a href={props.link} target="_blank"><div className="Icons" >{props.icon}</div></a>
+                           
+                         </div>
+                         
                         )
                        })}
                     </div>

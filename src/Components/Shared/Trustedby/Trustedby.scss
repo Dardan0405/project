@@ -1,7 +1,7 @@
 .Trusted-by-manycomapnies{
-    margin: 3.5%;
+    margin: 4.5% 3% 8%;
     font-family: "Poppins", sans-serif;
-    padding: 0% 35%;
+    padding: 0% 35.2%;
    
   
     
@@ -102,7 +102,7 @@ position: relative;
     display: flex;
     flex-wrap: wrap;
 
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     position: absolute;
     margin: max(21px,1vw)0%;
@@ -125,8 +125,7 @@ position: relative;
     
    
    
-   height: max(73px,2vw);
-   margin: max(74px,2vw);
+   transform: scale(0.75);
    content: url('../../../assets/Shared/Trusted/logo111.png');
    @media(max-width: 750px){
     height: max(61px,2vw);
@@ -135,7 +134,7 @@ position: relative;
 }
 .logo-row2{
     
-   height: max(40px,3vw);
+     transform: scale(0.75);
     position: relative;
     margin: max(30px,1vw);
     content: url('../../../assets/Shared/Trusted/logo222.png');
@@ -147,8 +146,7 @@ position: relative;
 .logo-row3{
     
 
-    height: max(46px,2vw);
-    margin: max(52px,1vw);
+    transform: scale(0.81);
     
     content: url('../../../assets/Shared//Trusted/logo333.png');
    @media(max-width: 750px){
@@ -159,9 +157,7 @@ position: relative;
 .logo-row4{
     
     margin-top: -1%;
-    margin-right: 81px;
-    
-    height: max(49px,2vw);
+    transform: scale(0.71);
    content: url('../../../assets/Shared/Trusted/logo444.png');
    @media(max-width: 750px){
     margin-right: 73px;
@@ -170,11 +166,7 @@ position: relative;
 }
 
 .logo-row5{
-    
-    
-    
-    height: max(32px,1vw);
-    margin:max(37px,1vw);
+    transform: scale(0.71);
     content: url('../../../assets/Shared/Trusted/logo555.png');
     @media(max-width: 750px){
         height: max(31px,1vw);

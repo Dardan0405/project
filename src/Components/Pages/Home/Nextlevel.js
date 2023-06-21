@@ -33,7 +33,7 @@ const Next  =() =>{
         
         <p>
             <FormattedMessage id="onlie" 
-            defaultMessage= "Online learning platform you can easily access antyime,anywhere"/>
+            defaultMessage= "Online learning platform you can easily access antyime, anywhere"/>
         </p>
         <div className="Links">
         <Link to='/'  className="Join-for-free">

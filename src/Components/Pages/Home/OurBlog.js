@@ -7,7 +7,7 @@ import './styles/OurBlog.scss'
 const OurBlog =()=>{
     return(
         <div className="Our-Blog">
-            <h4><FormattedMessage id="Our" defaultMessage="Our"  />     <span>   Blog</span>
+            <h4><FormattedMessage id="Our" defaultMessage="Our"  /> &nbsp; <span>   Blog</span>
             </h4>
             <div className="Link-Ourblog">
                 <Link>View more</Link>

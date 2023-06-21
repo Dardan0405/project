@@ -67,7 +67,7 @@ export const dataCards =[
         Quote2:Quote2,
         Description:<FormattedMessage id = "I studied" defaultMessage="I studied Graphic Design for 6 months at Kosova Training,I have
         learned a lot and im not planning to stop I loved the course, teachers, lectures..."/>,
-        infoStudent:<FormattedMessage id="amina" defaultMessage="Amina Malik"/>,
+        infoStudent:<FormattedMessage id="Albana" defaultMessage="Albana Uka"/>,
         status:<FormattedMessage id="ST" defaultMessage= "(Student)" />
     },
     {
@@ -76,7 +76,7 @@ export const dataCards =[
         Quote2:Quote2,
         Description:<FormattedMessage id="Help" defaultMessage="Kosova Training helped me a lot! Not only does my resume looks impressive-
         field with certificates also bring me closer to my career goal."/>,
-        infoStudent:<FormattedMessage id="Ashton" defaultMessage="Ashton Smith"/>,
+        infoStudent:<FormattedMessage id="Arian" defaultMessage="Arjan Elezaj"/>,
         status:<FormattedMessage id="S" defaultMessage="(Student)"/>
 
 
