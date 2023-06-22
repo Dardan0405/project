@@ -19,15 +19,28 @@ import Student6 from "../../../assets/Home/ImagesForHome/Student6.png"
 import Student7 from "../../../assets/Home/ImagesForHome/Student7.png"
 import medal from "../../../assets/Home/ImagesForHome/medal.svg"
 
+import validation from "./LoginValidation";
 
 const LoginCard =() =>{
-    const [email,setEmail] = useState("");
-    const [password,setPassword] = useState("");
+
     const [remeber,setRemeber] = useState(false);
     const [hidden,setHidden] = useState(true);
+    const [value,setValue] = useState({
+        email: '',
+        password: ''
+    })
+    const handleInput = (event) => {
+        setValue(prev =>({...prev, [event.target.name]: [event.target.value]}))
+    }
+    const [Errors,SetErrors] =useState({})
+    const handleSubmit =(event) => {
+        event.preventDefault();
+        SetErrors(validation(value))
+    }
+
    
 return(
-    <form className="Login-Card">
+    <form className="Login-Card" onSubmit={handleSubmit}>
         <div className="Description-Login">
             <h4><FormattedMessage id="Log in Account" defaultMessage="Log  In   to  Your  Account !"/></h4>
             <p><FormattedMessage id="Welcome back" defaultMessage="Welcome back to your Kosova Training account"/></p>
@@ -41,13 +54,15 @@ return(
             type= "email"
             id="email"
             name="email"
-            value={email}
-            onChange ={(e) => setEmail(e.target.value)}
+            
+            onChange ={handleInput}
+            
             placeholder={msg}
 
             />
           )}
-          </FormattedMessage>       
+          </FormattedMessage> 
+              {Errors.email && <span className="text-danger">{Errors.email}</span>}
           </div>
           <div className="input-container-Login">
             <span><FiLock/></span>
@@ -57,8 +72,8 @@ return(
                     type={hidden ? "password" : "text"}
                     id="password"
                     name="password"
-                    value={password}
-                    onChange ={(e) => setPassword(e.target.value)}
+                 
+                    onChange ={handleInput}
                     placeholder ={msg}
                     />
                 )}
@@ -66,6 +81,7 @@ return(
             <div className="hidden-login" onClick={() => setHidden(!hidden)}>
                 {hidden ? <AiOutlineEyeInvisible/>  : <AiOutlineEye/>}
             </div>
+            {Errors.password  && <span className="text-danger">{Errors.password }</span>}
           </div>
     </div>
     <div  className="Forgotpassword">
@@ -80,7 +96,7 @@ return(
         </label>
     </div>
     <div className ="Button-Login">
-        <button><FormattedMessage id="Login" defaultMessage="Log in"/></button>
+        <button type="submit"><FormattedMessage id="Login" defaultMessage="Log in"/></button>
     </div>
     <div className="Registe-login">
         <p><FormattedMessage id="Don't" defaultMessage="Don't have an account?"/><Link to="/Signin">

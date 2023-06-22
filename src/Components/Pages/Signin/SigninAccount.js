@@ -13,24 +13,48 @@ import person2 from "../../../assets/Signin/person2.png"
 import person3 from "../../../assets/Signin/person3.png"
 import person4 from "../../../assets/Signin/person4.png"
 import person5 from "../../../assets/Signin/person5.png"
-import { Form, Link } from "react-router-dom";
+import { Form, Link, useNavigate } from "react-router-dom";
 import {RiFireLine} from  "react-icons/ri"
 import { IconIllustrator } from "./data";
 import Facebook from "../../../assets/Login/Facebook.svg"
 import Twitter from "../../../assets/Login/Twitter.svg"
 import Google from "../../../assets/Login/Google.svg"
+import validation from "./SiginValidation";
+import axios from "axios";
 const SigninAccount = () =>{
+
+    const Navigate  = useNavigate();
     const [Name,SetName] = useState("");
     const [email,setEmail] = useState("");
     const [password,setPassword] = useState("");
     const [hidden,setHidden] = useState(true);
     const [privacy, setPrivacy] = useState(false);
     const [news, setNews] = useState(false);
-    const [value,setValue] = useState(1);
+    const [value,setValue] = useState({
+        name: '',
+        email: '',
+        password: ''
+    })
+    const [Errors,SetErrors] =useState({})
+    const handleSubmit =(event) => {
+        event.preventDefault();
+        SetErrors(validation(value))
+        if(Errors.name === "" && Errors.email === "" && Errors.password === ""){
+            axios.post('http://localhost:8081/Signin', value)
+            .then(res => {
+                Navigate('/Login');
+            })
+
+        }
+    }
+    const handleInput = (event) => {
+        setValue(prev =>({...prev, [event.target.name]: [event.target.value]}))
+    }
+
     return(
         <div className="background-signin">
             
-            <form className="Sigin-Card">
+            <form className="Sigin-Card" onSubmit={handleSubmit}>
             <div className="Title-Sigin">
                 <h4><FormattedMessage id="CreateAccount" defaultMessage="Create an Account"/></h4>
                 <p><FormattedMessage id="ForLearning" defaultMessage="For better learning experience"/></p>
@@ -44,13 +68,14 @@ const SigninAccount = () =>{
                type= "text"
                id="Name"
                name="Name"
-               value={Name}
-               onChange ={(e) => SetName(e.target.value)}
+               
+               onChange ={handleInput}
                placeholder={msg}
 
             />
           )}
                   </FormattedMessage>
+                  {Errors.name && <span className="text-danger">{Errors.name}</span>}
                 </div>
                 <div className="Input-Container-Signin">
           <span><TfiEmail/></span>
@@ -60,13 +85,14 @@ const SigninAccount = () =>{
             type= "email"
             id="email"
             name="email"
-            value={email}
-            onChange ={(e) => setEmail(e.target.value)}
+            
+            onChange ={handleInput}
             placeholder={msg}
 
             />
           )}
-          </FormattedMessage>       
+          </FormattedMessage>      
+          {Errors.email && <span className="text-danger">{Errors.email}</span>} 
           </div>
           <div className="Input-Container-Signin">
             <span><FiUnlock/></span>
@@ -76,8 +102,8 @@ const SigninAccount = () =>{
                     type={hidden ? "password" : "text"}
                     id="password"
                     name="password"
-                    value={password}
-                    onChange ={(e) => setPassword(e.target.value)}
+                    
+                    onChange ={handleInput}
                     placeholder ={msg}
                     />
                 )}
@@ -85,7 +111,7 @@ const SigninAccount = () =>{
             <div className="hidden-login" onClick={() => setHidden(!hidden)}>
                 {hidden ? <AiOutlineEyeInvisible/>  : <AiOutlineEye/>}
             </div>
-            
+            {Errors.password && <span className="text-danger">{Errors.password}</span>}
           </div>
           <div className="Text-Password-Signin">
               <p><FormattedMessage id="8charackter" defaultMessage="Password  must be 8 or more characters"/></p>
@@ -96,10 +122,10 @@ const SigninAccount = () =>{
                 {(msg) =>(
                     <input 
                     type={hidden ? "password" : "text"}
-                    id="password"
+                    id="pass"
                     name="password"
-                    value={password}
-                    onChange ={(e) => setPassword(e.target.value)}
+                    
+                    onChange ={handleInput}
                     placeholder ={msg}
                     />
                 )}
@@ -107,7 +133,7 @@ const SigninAccount = () =>{
             <div className="hidden-login" onClick={() => setHidden(!hidden)}>
                 {hidden ? <AiOutlineEyeInvisible/>  : <AiOutlineEye/>}
             </div>
-            
+            {Errors.password && <span className="text-danger">{Errors.password}</span>}
 </div>
             </div>
        <div className="Check-Box-Signin">
