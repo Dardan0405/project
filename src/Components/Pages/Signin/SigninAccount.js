@@ -23,32 +23,46 @@ import validation from "./SiginValidation";
 import axios from "axios";
 const SigninAccount = () =>{
 
-    const Navigate  = useNavigate();
-    const [Name,SetName] = useState("");
+      const [confirmPassword,SetConfirmpassword] =useState('')
+     const Navigate  = useNavigate();
+    const [name,Setname] = useState("");
     const [email,setEmail] = useState("");
     const [password,setPassword] = useState("");
     const [hidden,setHidden] = useState(true);
     const [privacy, setPrivacy] = useState(false);
     const [news, setNews] = useState(false);
-    const [value,setValue] = useState({
-        name: '',
-        email: '',
-        password: ''
-    })
+  
     const [Errors,SetErrors] =useState({})
-    const handleSubmit =(event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault();
-        SetErrors(validation(value))
-        if(Errors.name === "" && Errors.email === "" && Errors.password === ""){
-            axios.post('http://localhost:8081/Signin', value)
-            .then(res => {
-                Navigate('/Login');
-            })
-
+        console.log(name, email, password, confirmPassword);
+        if(name === '' || email === '' || password === '' || confirmPassword === ''){
+            alert('all filled')
         }
+        else{
+            const data ={
+                name,
+                email,
+                password,
+                confirmPassword
+            };
+        try{
+        const response = await axios.post ('http://localhost:8081/mydatabase', data)
+        console.log(response.data)
+        if(response.data === 'success'){
+            Navigate('/')
+        }
+        
+        }
+        catch (error){
+            console.error('Error inserting data into database:', error)
+        }
+        
+    
+    
+        
+
     }
-    const handleInput = (event) => {
-        setValue(prev =>({...prev, [event.target.name]: [event.target.value]}))
     }
 
     return(
@@ -69,8 +83,8 @@ const SigninAccount = () =>{
                id="Name"
                name="Name"
                
-               onChange ={handleInput}
-               placeholder={msg}
+               onChange = {(e) => Setname(e.target.value)}
+               placeholder="Name"
 
             />
           )}
@@ -86,8 +100,8 @@ const SigninAccount = () =>{
             id="email"
             name="email"
             
-            onChange ={handleInput}
-            placeholder={msg}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder= "Email"
 
             />
           )}
@@ -103,8 +117,8 @@ const SigninAccount = () =>{
                     id="password"
                     name="password"
                     
-                    onChange ={handleInput}
-                    placeholder ={msg}
+                    onChange={(e) => setPassword(e.target.value)}
+                    placeholder ="password"
                     />
                 )}
             </FormattedMessage>
@@ -125,8 +139,8 @@ const SigninAccount = () =>{
                     id="pass"
                     name="password"
                     
-                    onChange ={handleInput}
-                    placeholder ={msg}
+                    onChange={(e) => SetConfirmpassword(e.target.value)}
+                    placeholder ="Confirm Password"
                     />
                 )}
             </FormattedMessage>

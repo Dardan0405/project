@@ -10,15 +10,17 @@ const db = mysql.createConnection({
     host: "localhost",
     user: "root",
     password: "",
-    database: "signup"
+    database: "mydatabase"
     
 })
-app.post("/signup", (req, res) => {
-    const sql = "INSERT INTO  login (`name`, `email`,  `passowrd`) VALUES (?)"
+app.post("/mydatabase", (req, res) => {
+    console.log(req.body)
+    const sql = "INSERT INTO  login (`name`, `email`,  `passowrd`, confirmpassword) VALUES (?,?,?,?)"
     const  values = [
         req.body.name,
         req.body.email,
-        req.body.password
+        req.body.password,
+        req.body.confirmpassword
     ]
     db.query(sql, [values], (err, data) => {
         if(err){
@@ -28,5 +30,5 @@ app.post("/signup", (req, res) => {
     })
 })
 app.listen(8081, () =>{
-    console.log("listening");
+    console.log("Listening on port 8081");
 });
